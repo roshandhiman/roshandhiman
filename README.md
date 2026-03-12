@@ -1,3 +1,6 @@
+<p align="center">
+<img src="https://komarev.com/ghpvc/?username=roshandhiman&label=Visitors&color=blueviolet&style=for-the-badge">
+</p>
 # <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"> Hey, I'm Roshanpreet Singh Dhiman
 
 <p align="center">
@@ -27,7 +30,7 @@
 
 <p align="center">
 
-<img src="https://skillicons.dev/icons?i=html,css,js,ts,python,c,swift,react,nodejs,git,linux,vscode" />
+<img src="https://skillicons.dev/icons?i=html,css,js,ts,python,c,swift,react,nodejs,git,linux,kali,vscode" />
 
 </p>
 
@@ -56,7 +59,7 @@
 # 🏆 GitHub Trophies
 
 <p align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=roshandhiman&theme=matrix&no-frame=true&row=1&column=7">
+<img src="https://github-profile-trophy.vercel.app/?username=roshandhiman&theme=radical&no-frame=true&row=1&column=7">
 </p>
 
 ---
@@ -79,11 +82,23 @@
 
 # 🚀 Featured Projects
 
-🔹 AI Hand Gesture Shooter  
-🔹 NeoVerse Student Learning Hub  
-🔹 Deepfake AI Project  
-🔹 Mac Live Wallpaper  
-🔹 Friday Desktop Assistant  
+### 🤖 AI Hand Gesture Shooter
+A real-time computer vision game built with Python, OpenCV, and MediaPipe where players control shooting actions using hand gestures detected from the webcam.
+
+### 🧩 Hand Gesture Puzzle Game
+An interactive AI-powered puzzle game where the system captures the webcam feed and splits it into a 3×3 puzzle that users solve using gestures.
+
+### 🎨 AI Gesture Drawing App
+A creative drawing tool that allows users to draw on screen using hand movements captured through the webcam using computer vision.
+
+### 🚀 Hand Rocket Game
+A gesture-controlled rocket game where players launch and control rockets using hand gestures detected through real-time AI vision.
+
+### 🧠 Deepfake AI Project
+An experimental deep learning project exploring AI-generated faces and face-swap technology using modern machine learning techniques.
+
+### 🖥 Friday Desktop Assistant
+A futuristic desktop assistant built with TypeScript designed to automate tasks and create a smart productivity environment.
 
 ---
 
