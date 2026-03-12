@@ -6,12 +6,6 @@
 
 ---
 
-<p align="center">
-<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=28&duration=3000&color=00F7FF&center=true&vCenter=true&width=900&lines=Frontend+Developer;AI+Builder;Computer+Vision+Projects;Hackathon+Developer;Creative+Coder">
-</p>
-
----
-
 ## 🧠 About Me
 
 🚀 Frontend Developer  
