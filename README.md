@@ -1,16 +1,104 @@
-## Hi there 👋
+# <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"> Hey, I'm Roshanpreet Singh Dhiman
 
-<!--
-**roshandhiman/roshandhiman** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<p align="center">
+<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=28&duration=3000&color=00F7FF&center=true&vCenter=true&width=900&lines=Frontend+Developer;AI+Builder;Hackathon+Developer;Creative+Coder;Future+Tech+Explorer">
+</p>
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🧠 About Me
+
+🚀 Frontend Developer  
+🤖 AI Experimenter  
+💻 Building cool things with code  
+⚡ Love hackathons, startups, and futuristic tech  
+
+---
+
+## 🌍 Profile Views
+
+<p align="center">
+<img src="https://komarev.com/ghpvc/?username=roshandhiman&label=Profile%20Views&color=blueviolet&style=for-the-badge">
+</p>
+
+---
+
+# 🧰 Tech Stack
+
+<p align="center">
+
+<img src="https://skillicons.dev/icons?i=html,css,js,ts,python,c,swift,react,nodejs,git,linux,vscode" />
+
+</p>
+
+---
+
+# ⚡ GitHub Stats
+
+<p align="center">
+
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=roshandhiman&show_icons=true&theme=tokyonight&hide_border=true"/>
+
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=roshandhiman&layout=compact&theme=tokyonight&hide_border=true"/>
+
+</p>
+
+---
+
+# 🔥 GitHub Streak
+
+<p align="center">
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=roshandhiman&theme=tokyonight&hide_border=true">
+</p>
+
+---
+
+# 🏆 GitHub Trophies
+
+<p align="center">
+<img src="https://github-profile-trophy.vercel.app/?username=roshandhiman&theme=matrix&no-frame=true&row=1&column=7">
+</p>
+
+---
+
+# 📈 Contribution Graph
+
+<p align="center">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=roshandhiman&theme=tokyo-night">
+</p>
+
+---
+
+# 🐍 Contribution Snake
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg">
+</p>
+
+---
+
+# 🚀 Featured Projects
+
+🔹 AI Hand Gesture Shooter  
+🔹 NeoVerse Student Learning Hub  
+🔹 Deepfake AI Project  
+🔹 Mac Live Wallpaper  
+🔹 Friday Desktop Assistant  
+
+---
+
+# 🌐 Connect With Me
+
+📧 roshanpreetsinghdhiman@gmail.com  
+
+<p align="center">
+
+<a href="https://github.com/roshandhiman">
+<img src="https://img.shields.io/badge/Github-000?style=for-the-badge&logo=github">
+</a>
+
+</p>
+
+---
+
+⭐ If you like my work, consider giving a star to my repositories.
