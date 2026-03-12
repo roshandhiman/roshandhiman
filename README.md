@@ -1,6 +1,3 @@
-<p align="center">
-<img src="https://komarev.com/ghpvc/?username=roshandhiman&label=Visitors&color=blueviolet&style=for-the-badge">
-</p>
 # <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"> Hey, I'm Roshanpreet Singh Dhiman
 
 <p align="center">
@@ -9,12 +6,18 @@
 
 ---
 
+<p align="center">
+<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=28&duration=3000&color=00F7FF&center=true&vCenter=true&width=900&lines=Frontend+Developer;AI+Builder;Computer+Vision+Projects;Hackathon+Developer;Creative+Coder">
+</p>
+
+---
+
 ## 🧠 About Me
 
 🚀 Frontend Developer  
-🤖 AI Experimenter  
-💻 Building cool things with code  
-⚡ Love hackathons, startups, and futuristic tech  
+🤖 AI / Computer Vision Experimenter  
+💻 Building interactive applications and AI projects  
+⚡ Passionate about hackathons, startups, and futuristic technology
 
 ---
 
@@ -56,10 +59,10 @@
 
 ---
 
-# 🏆 GitHub Trophies
+## 🏆 GitHub Trophies
 
 <p align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=roshandhiman&theme=radical&no-frame=true&row=1&column=7">
+<img src="https://github-profile-trophy.vercel.app/?username=roshandhiman&theme=tokyonight&no-frame=true&no-bg=true&margin-w=10"/>
 </p>
 
 ---
