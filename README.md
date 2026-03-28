@@ -69,28 +69,6 @@
 
 ---
 
-# 🚀 Featured Projects
-
-### 🤖 AI Hand Gesture Shooter
-A real-time computer vision game built with Python, OpenCV, and MediaPipe where players control shooting actions using hand gestures detected from the webcam.
-
-### 🧩 Hand Gesture Puzzle Game
-An interactive AI-powered puzzle game where the system captures the webcam feed and splits it into a 3×3 puzzle that users solve using gestures.
-
-### 🎨 AI Gesture Drawing App
-A creative drawing tool that allows users to draw on screen using hand movements captured through the webcam using computer vision.
-
-### 🚀 Hand Rocket Game
-A gesture-controlled rocket game where players launch and control rockets using hand gestures detected through real-time AI vision.
-
-### 🧠 Deepfake AI Project
-An experimental deep learning project exploring AI-generated faces and face-swap technology using modern machine learning techniques.
-
-### 🖥 Friday Desktop Assistant
-A futuristic desktop assistant built with TypeScript designed to automate tasks and create a smart productivity environment.
-
----
-
 # 🌐 Connect With Me
 
 <p align="center">
