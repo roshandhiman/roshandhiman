@@ -32,32 +32,6 @@
 </p>
 
 ---
-
-
-# 🔥 GitHub Streak
-
-<p align="center">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=roshandhiman&theme=tokyonight&hide_border=true">
-</p>
-
----
-
-# 📈 Contribution Graph
-
-<p align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=roshandhiman&theme=tokyo-night">
-</p>
-
----
-
-# 🐍 Contribution Snake
-
-<p align="center">
-<img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake.svg">
-</p>
-
----
-
 # 🌐 Connect With Me
 
 <p align="center">
