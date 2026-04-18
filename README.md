@@ -1,4 +1,4 @@
-# <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"> Hey, I'm Roshanpreet Singh Dhiman
+https://github-profile-repo.vercel.app/?username=roshandhiman&theme=light# <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"> Hey, I'm Roshanpreet Singh Dhiman
 
 <p align="center">
 <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=28&duration=3000&color=00F7FF&center=true&vCenter=true&width=900&lines=Frontend+Developer;AI+Builder;Hackathon+Developer;Creative+Coder;Future+Tech+Explorer">
@@ -30,6 +30,17 @@
 <img src="https://skillicons.dev/icons?i=html,css,js,ts,python,c,swift,react,nodejs,git,linux,kali,vscode" />
 
 </p>
+
+
+## 🏆 GitHub Trophies
+
+<p align="center">
+
+<img src="https://github-profile-repo.vercel.app/?username=roshandhiman&theme=light" />
+
+</p>
+
+---
 
 ---
 # 🌐 Connect With Me
