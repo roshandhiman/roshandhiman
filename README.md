@@ -128,8 +128,11 @@
 > loading modules...
 > optimizing performance...
 > system ready ✔
----
+```
+
 </div>
+
+---
 
 
 ## `$ cat github_stats.log`
