@@ -39,7 +39,7 @@
 ---
 <div align="center">
 
-<img src="https://media.tenor.com/0ob2sXp_mrIAAAAi/antagonist-benjammins.gif" width="49%" />
+<img src="https://media.tenor.com/0ob2sXp_mrIAAAAi/antagonist-benjammins.gif" width="39%" />
 
 </div>
 
