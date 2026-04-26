@@ -21,42 +21,16 @@
 
 ## `$ whoami`
 
-<div align="center">
-
-<img src="https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif" width="100%" />
-
-</div>
-
-<div align="center">
-
-<pre>
-
-[+] Role     : Frontend Developer & AI / CV Experimenter
-[+] OS       : Kali Linux / macOS
-[+] Location : Punjab, India
-[+] Focus    : Hackathons · AI Projects · Interactive Web
-[+] Status   : Currently building something wild 🔴 LIVE
-
-</pre>
-
-</div>
-
----
-
-## `$ cat skills_matrix.json`
-
-```json
-{
-  "languages"          : ["JavaScript", "TypeScript", "Python", "C", "Swift"],
-  "frontend"           : ["React", "HTML5", "CSS3", "Tailwind CSS"],
-  "backend"            : ["Node.js", "Express.js", "REST APIs"],
-  "ai_ml_cv"           : ["OpenCV", "TensorFlow", "MediaPipe", "LLM APIs"],
-  "tools"              : ["Git", "Linux", "Kali Linux", "VSCode", "Figma"],
-  "currently_learning" : ["Rust", "WebAssembly", "Agentic AI"],
-  "superpower"         : "Turning caffeine → working code at 3 AM 🌙"
-}
 ```
-
+┌──────────────────────────────────────────────────────────────────────────┐
+│  [+] Role     : Frontend Developer & AI / CV Experimenter                │
+│  [+] OS       : Kali Linux / macOS                                       │
+│  [+] Location : Punjab, India                                            │
+│  [+] Focus    : Hackathons · AI Projects · Interactive Web               │
+│  [+] Status   : Currently building something wild ❗️LIVE                  │
+│  [+] Quote    : "The best code is the one that doesn't exist yet."       │
+└──────────────────────────────────────────────────────────────────────────┘
+```
 ---
 
 ## `$ ls ./tech-stack --ultra`
