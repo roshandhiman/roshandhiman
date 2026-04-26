@@ -182,8 +182,8 @@
   <img src="https://img.shields.io/badge/LinkedIn-roshandhiman-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=003366"/>
 </a>
 &nbsp;
-<a href="https://leetcode.com/u/HyAPnYLMyv/">
-  <img src="https://img.shields.io/badge/LeetCode-HyAPnYLMyv-FFA116?style=for-the-badge&logo=leetcode&logoColor=FFA116&labelColor=1a1200"/>
+<a href="https://leetcode.com/u/roshanpreetsingh/">
+  <img src="https://img.shields.io/badge/LeetCode-roshanpreetsingh-FFA116?style=for-the-badge&logo=leetcode&logoColor=FFA116&labelColor=1a1200"/>
 </a>
 
 <br/><br/>
