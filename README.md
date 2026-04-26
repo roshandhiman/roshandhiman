@@ -16,13 +16,7 @@
 <img src="https://img.shields.io/badge/LOCATION-Punjab%2C%20India-00ff41?style=flat-square&labelColor=0d1117"/>
 
 </div>
-<div align="center">
 
-<img src="https://media1.tenor.com/m/lgzQ7Q0MaXAAAAAd/font-hacker.gif" width="49%" />
-
-</div>
-
-<br/>
 
 ---
 
@@ -39,6 +33,13 @@
 └──────────────────────────────────────────────────────────────────────────┘
 ```
 ---
+<div align="center">
+
+<img src="https://media1.tenor.com/m/lgzQ7Q0MaXAAAAAd/font-hacker.gif" width="49%" />
+
+</div>
+
+<br/>
 
 ## `$ ls ./tech-stack --ultra`
 
@@ -91,13 +92,6 @@
 ---
 
 <div align="center">
-
-### ⚡ SYSTEM METRICS
-
-<img src="https://img.shields.io/badge/Code%20Style-Clean-00ff41?style=for-the-badge&labelColor=0d1117"/>
-<img src="https://img.shields.io/badge/Focus-AI%20%2F%20Frontend-00ff41?style=for-the-badge&labelColor=0d1117"/>
-<img src="https://img.shields.io/badge/Build%20Mode-Hacker-00ff41?style=for-the-badge&labelColor=0d1117"/>
-<img src="https://img.shields.io/badge/Status-Shipping-00ff41?style=for-the-badge&labelColor=0d1117"/>
 
 </div>
 
