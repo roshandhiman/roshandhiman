@@ -21,7 +21,7 @@
 ---
 
 ## `$ whoami`
-<img align="right" src="https://media.tenor.com/8bQBiTEMntEAAAAi/roblox-roblox-meme.gif" width="120" />
+<img align="right" src="https://media.tenor.com/8bQBiTEMntEAAAAi/roblox-roblox-meme.gif" width="160" />
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────┐
