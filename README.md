@@ -21,16 +21,25 @@
 
 ## `$ whoami`
 
-```
-┌──────────────────────────────────────────────────────────────────────────┐
-│  [+] Role     : Frontend Developer & AI / CV Experimenter                │
-│  [+] OS       : Kali Linux / macOS                                       │
-│  [+] Location : Punjab, India                                            │
-│  [+] Focus    : Hackathons · AI Projects · Interactive Web               │
-│  [+] Status   : Currently building something wild ❗️LIVE                  │
-│  [+] Quote    : "The best code is the one that doesn't exist yet."       │
-└──────────────────────────────────────────────────────────────────────────┘
-```
+<div align="center">
+
+<img src="https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif" width="100%" />
+
+</div>
+
+<div align="center">
+
+<pre>
+
+[+] Role     : Frontend Developer & AI / CV Experimenter
+[+] OS       : Kali Linux / macOS
+[+] Location : Punjab, India
+[+] Focus    : Hackathons · AI Projects · Interactive Web
+[+] Status   : Currently building something wild 🔴 LIVE
+
+</pre>
+
+</div>
 
 ---
 
