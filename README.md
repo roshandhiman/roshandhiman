@@ -53,8 +53,7 @@
 
 <div align="center">
 
-<!-- TOP LINE -->
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=18&duration=2000&pause=800&color=00FF41&center=true&vCenter=true&width=600&lines=Loading+Tech+Stack...;Initializing+Modules...;System+Ready+✓" />
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=20&duration=2000&pause=800&color=00FF41&center=true&vCenter=true&width=600&lines=Loading+Tech+Stack...;Initializing+Modules...;System+Ready+✓" />
 
 </div>
 
