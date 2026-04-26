@@ -51,39 +51,28 @@
 
 ## `$ ls ./tech-stack`
 
+## 🚀 TECH STACK
+
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=js,ts,python,c,swift&theme=dark" />
-<br/><br/>
-<img src="https://skillicons.dev/icons?i=html,css,react,tailwind,figma&theme=dark" />
-<br/><br/>
-<img src="https://skillicons.dev/icons?i=nodejs,git,linux,vscode,kali&theme=dark" />
-<br/><br/>
-<img src="https://skillicons.dev/icons?i=tensorflow,opencv,pytorch,flask,fastapi&theme=dark" />
+<img src="https://skillicons.dev/icons?i=js,ts,python,c,react,html,css,tailwind,nodejs,git,linux,vscode&theme=dark&perline=6" />
 
 </div>
-
 ---
 
 ## `$ cat github_stats.log`
 
+## 📊 GITHUB STATS
+
 <div align="center">
 
-<table>
-  <tr>
-    <td align="center" width="50%">
-      <img src="https://github-readme-stats.vercel.app/api?username=roshandhiman&show_icons=true&theme=terminal&hide_border=true&bg_color=0d1117&title_color=00ff41&icon_color=00ff41&text_color=c9d1d9&count_private=true&include_all_commits=true&custom_title=GitHub%20Stats" width="100%"/>
-    </td>
-    <td align="center" width="50%">
-      <img src="https://streak-stats.demolab.com?user=roshandhiman&theme=terminal&hide_border=true&background=0d1117&stroke=00ff41&ring=00ff41&fire=ff6600&currStreakLabel=00ff41&sideLabels=00ff41&currStreakNum=ffffff&sideNums=c9d1d9&dates=555555" width="100%"/>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" colspan="2">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=roshandhiman&theme=terminal&hide_border=true&bg_color=0d1117&title_color=00ff41&text_color=c9d1d9&layout=compact&langs_count=10" width="60%"/>
-    </td>
-  </tr>
-</table>
+<img src="https://github-readme-stats.vercel.app/api?username=roshandhiman&show_icons=true&theme=github_dark&hide_border=true&bg_color=000000" width="49%" />
+
+<img src="https://streak-stats.demolab.com?user=roshandhiman&theme=github-dark&hide_border=true&background=000000" width="49%" />
+
+<br/><br/>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=roshandhiman&layout=compact&theme=github_dark&hide_border=true&bg_color=000000" width="40%" />
 
 </div>
 
