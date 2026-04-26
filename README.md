@@ -178,8 +178,8 @@
   <img src="https://img.shields.io/badge/GitHub-roshandhiman-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=111111"/>
 </a>
 &nbsp;
-<a href="https://www.linkedin.com/in/Roshanpreet Singh Dhiman">
-  <img src="https://img.shields.io/badge/LinkedIn-roshandhiman-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=003366"/>
+<a href="https://www.linkedin.com/in/roshandhiman">
+  <img src="https://img.shields.io/badge/LinkedIn-Roshanpreet Singh Dhiman-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=003366"/>
 </a>
 &nbsp;
 <a href="https://leetcode.com/u/roshanpreetsingh/">
