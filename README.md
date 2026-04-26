@@ -22,12 +22,12 @@
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────┐
-│  [+] Role     : Frontend Developer & AI / CV Experimenter               │
+│  [+] Role     : Frontend Developer & AI / CV Experimenter                │
 │  [+] OS       : Kali Linux / macOS                                       │
 │  [+] Location : Punjab, India                                            │
 │  [+] Focus    : Hackathons · AI Projects · Interactive Web               │
-│  [+] Status   : Currently building something wild 🔴 LIVE               │
-│  [+] Quote    : "The best code is the one that doesn't exist yet."      │
+│  [+] Status   : Currently building something wild ❗️LIVE                  │
+│  [+] Quote    : "The best code is the one that doesn't exist yet."       │
 └──────────────────────────────────────────────────────────────────────────┘
 ```
 
