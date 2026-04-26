@@ -1,3 +1,4 @@
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,30:001a00,70:003b00,100:00ff41&height=250&section=header&text=ROSHANPREET%20SINGH&fontColor=00ff41&animation=twinkling"/>
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,40:001a00,60:003b00,100:00ff41&height=220&section=header&text=ROSHANPREET%20SINGH%20DHIMAN&fontSize=34&fontColor=00ff41&fontAlignY=40&desc=Frontend%20Dev%20%7C%20AI%20Builder%20%7C%20Hackathon%20Warrior&descSize=16&descAlignY=60&descColor=39d353&animation=twinkling" width="100%"/>
