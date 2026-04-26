@@ -1,4 +1,4 @@
-name: Generate Snake
+name: generate snake
 
 on:
   schedule:
@@ -13,24 +13,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Generate Snake
+      - name: Generate snake
         uses: Platane/snk@v3
         with:
           github_user_name: roshandhiman
           outputs: |
             dist/github-snake-dark.svg?palette=github-dark
-            dist/github-snake.svg
 
-      - name: Deploy
-        run: |
-          cd dist
-          git init
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-          git checkout -b output
-          git add .
-          git commit -m "update snake"
-          git push --force https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/roshandhiman/roshandhiman.git output
+      - name: Push to output branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: output
+          publish_dir: ./dist
