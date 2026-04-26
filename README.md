@@ -49,16 +49,88 @@
 
 ---
 
-## `$ ls ./tech-stack`
-
-## 🚀 TECH STACK
+## `$ ls ./tech-stack --ultra`
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=js,ts,python,c,react,html,css,tailwind,nodejs,git,linux,vscode&theme=dark&perline=6" />
+<!-- TOP LINE -->
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=18&duration=2000&pause=800&color=00FF41&center=true&vCenter=true&width=600&lines=Loading+Tech+Stack...;Initializing+Modules...;System+Ready+✓" />
 
 </div>
+
 ---
+
+<div align="center">
+
+<table>
+<tr>
+<td align="center">
+
+### 🧠 LANGUAGES
+<img src="https://skillicons.dev/icons?i=js,ts,python,c,swift&theme=dark" />
+
+</td>
+<td align="center">
+
+### 🎨 FRONTEND
+<img src="https://skillicons.dev/icons?i=react,html,css,tailwind,figma&theme=dark" />
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+### ⚙️ BACKEND
+<img src="https://skillicons.dev/icons?i=nodejs,express,flask,fastapi&theme=dark" />
+
+</td>
+<td align="center">
+
+### 🤖 AI / ML
+<img src="https://skillicons.dev/icons?i=tensorflow,pytorch,opencv&theme=dark" />
+
+</td>
+</tr>
+
+<tr>
+<td align="center" colspan="2">
+
+### 🛠️ TOOLS & DEV
+<img src="https://skillicons.dev/icons?i=git,linux,vscode,kali,docker&theme=dark" />
+
+</td>
+</tr>
+
+</table>
+
+</div>
+
+---
+
+<div align="center">
+
+### ⚡ SYSTEM METRICS
+
+<img src="https://img.shields.io/badge/Code%20Style-Clean-00ff41?style=for-the-badge&labelColor=0d1117"/>
+<img src="https://img.shields.io/badge/Focus-AI%20%2F%20Frontend-00ff41?style=for-the-badge&labelColor=0d1117"/>
+<img src="https://img.shields.io/badge/Build%20Mode-Hacker-00ff41?style=for-the-badge&labelColor=0d1117"/>
+<img src="https://img.shields.io/badge/Status-Shipping-00ff41?style=for-the-badge&labelColor=0d1117"/>
+
+</div>
+
+---
+
+<div align="center">
+
+```bash
+> initializing stack...
+> loading modules...
+> optimizing performance...
+> system ready ✔
+---
+</div>
+
 
 ## `$ cat github_stats.log`
 
