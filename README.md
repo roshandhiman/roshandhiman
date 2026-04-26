@@ -45,6 +45,8 @@
 
 <br/>
 
+---
+
 ## `$ ls ./tech-stack --ultra`
 
 <div align="center">
@@ -93,24 +95,7 @@
 
 </div>
 
----
 
-<div align="center">
-
-</div>
-
----
-
-<div align="center">
-
-```bash
-> initializing stack...
-> loading modules...
-> optimizing performance...
-> system ready ✔
-```
-
-</div>
 
 ---
 
