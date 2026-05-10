@@ -122,7 +122,7 @@
 
 <div align="center">
 
-<img src="https://github-profile-trophy-sigma-one.vercel.app/?username=roshandhiman&theme=dark" width="100%"/>
+<img src="https://github-profile-trophy.vercel.app/?username=roshandhiman&theme=juicyfresh&row=1&column=6" width="100%"/>
 
 </div>
 
