@@ -1,0 +1,42 @@
+name: 3D Contribution Graph
+
+on:
+  schedule:
+    # Runs every day at midnight UTC
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Generate 3D Contribution Graph
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: roshandhiman
+          # Choose your theme below — options:
+          # default, gitblock, green, green-nur, nokey, nord, outrun,
+          # rainbow, sunset, tokyo-night, purple-night, night-view, night-rainbow
+          SETTING_JSON: |
+            {
+              "githubUserName": "roshandhiman",
+              "maxRepos": 10,
+              "type": "half-year",
+              "backgroundColor": "#0d1117",
+              "foregroundColor": "#00ff41"
+            }
+
+      - name: Commit & Push the 3D Graph
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add -A .
+          git commit -m "🔄 Auto-generate 3D contribution graph [skip ci]" || exit 0
+          git push
