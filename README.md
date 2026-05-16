@@ -67,6 +67,7 @@
   competing  →  Hackathons (and usually not sleeping)
   exploring  →  WebGL + Three.js rabbit holes
   running on →  Caffeine & 3 AM energy ☕
+  OS of life →  Kali Linux with a macOS aesthetic
 ```
 
 </td>
@@ -90,15 +91,19 @@
 
 <!-- ██████████████████████████ 3D CONTRIBUTION GRAPH ██████████████████████████ -->
 
-## `$ render ./contrib --3d --night-rainbow`
+## `$ render ./contrib --isometric`
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/roshandhiman/roshandhiman/output/profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D Contribution Graph"/>
+<a href="https://github.com/roshandhiman">
+  <img src="https://github-readme-stats.vercel.app/api?username=roshandhiman&show_icons=true&count_private=true&include_all_commits=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=00ff41&icon_color=00ff41&text_color=c9d1d9&ring_color=00ff41&border_radius=12&custom_title=Roshan's+GitHub+Universe" width="100%"/>
+</a>
+
+<br/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=roshandhiman&bg_color=0d1117&color=00ff41&line=00ff41&point=ffffff&area=true&area_color=003300&hide_border=true&radius=8&custom_title=Contribution+Heatmap+%E2%80%94+Every+green+square+is+a+W" width="100%"/>
 
 </div>
-
-> ⚙️ **Setup required:** Add [`.github/workflows/3d-contrib.yml`](#) to your repo → the graph auto-generates every day at midnight.
 
 <img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%"/>
 
