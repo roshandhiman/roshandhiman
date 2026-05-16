@@ -61,12 +61,14 @@
 
 <br/>
 
-- 🔭 Currently building **AI-powered web experiences**
-- 🌱 Deep-diving into **LLMs, RAG Pipelines & Vision Models**
-- 🏆 Competing in **hackathons across India & globally**
-- 💡 Experimenting with **WebGL, Three.js & Generative UI**
-- 🧠 Side-questing into **Computer Vision projects**
-- ⚡ My superpower: **Best code drops at 3 AM ☕**
+```
+  building   →  AI-powered web stuff that actually works
+  learning   →  LLMs, RAG & Computer Vision
+  competing  →  Hackathons (and usually not sleeping)
+  exploring  →  WebGL + Three.js rabbit holes
+  running on →  Caffeine & 3 AM energy ☕
+  OS of life →  Kali Linux with a macOS aesthetic
+```
 
 </td>
 <td width="42%" align="center" valign="top">
