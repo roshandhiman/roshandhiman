@@ -1,8 +1,14 @@
 <!-- ██████████████████████████ HERO HEADER ██████████████████████████ -->
 
-<img src="https://capsule-render.vercel.app/api?type=venom&color=0:000000,30:001a00,70:003b00,100:00ff41&height=320&section=header&text=ROSHANPREET%20SINGH%20DHIMAN&fontSize=44&fontColor=00ff41&animation=fadeIn&fontAlignY=48&desc=Frontend%20Developer%20%7C%20AI%20Experimenter%20%7C%20Hackathon%20Hunter&descAlignY=68&descSize=18&descColor=00cc33&stroke=00ff41&strokeWidth=2" width="100%"/>
+<!-- Matrix Man GIF — fully stretched banner -->
+<img src="https://media1.tenor.com/m/cOxR1hF63Y0AAAAC/matrix-film.gif" width="100%" height="220" style="object-fit:cover;"/>
 
 <div align="center">
+
+<!-- Name -->
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=900&size=38&duration=800&pause=99999&color=00FF41&center=true&vCenter=true&width=900&lines=ROSHANPREET+SINGH+DHIMAN" alt="Name"/>
+
+<br/>
 
 <!-- Animated Roles -->
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=22&duration=1800&pause=700&color=00FF41&center=true&vCenter=true&width=850&lines=%3E_+Frontend+Developer+%F0%9F%A7%A0;%3E_+AI+%26+Computer+Vision+Experimenter+%F0%9F%A4%96;%3E_+Hackathon+Conqueror+%F0%9F%8F%86;%3E_+rm+-rf+limitations+%F0%9F%92%A5;%3E_+Building+Tomorrow's+Tech+Today+%F0%9F%9A%80;%3E_+Open+Source+Contributor+%F0%9F%8C%8D;%3E_+Ctrl%2BAlt%2BElite+%E2%9C%A8" alt="Typing SVG" />
