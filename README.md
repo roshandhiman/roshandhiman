@@ -67,7 +67,6 @@
   competing  →  Hackathons (and usually not sleeping)
   exploring  →  WebGL + Three.js rabbit holes
   running on →  Caffeine & 3 AM energy ☕
-  OS of life →  Kali Linux with a macOS aesthetic
 ```
 
 </td>
