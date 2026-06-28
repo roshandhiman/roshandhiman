@@ -2,19 +2,15 @@
 <!-- 🏗️  ROSHANPREET SINGH DHIMAN — GITHUB PROFILE README                      -->
 <!-- ═══════════════════════════════════════════════════════════════════════════ -->
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,15:0a192f,40:00f2fe,60:7c3aed,85:0a192f,100:0d1117&height=220&section=header&text=&fontSize=0" width="100%" />
+<img src="https://media1.tenor.com/m/cOxR1hF63Y0AAAAC/matrix-film.gif" width="100%" height="180"/>
 
 <div align="center">
 
 <!-- ─── IDENTITY ─── -->
 
-<a href="https://roshandhiman-portfolio.vercel.app/">
-  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=800&size=36&duration=3000&pause=1200&color=FFFFFF&center=true&vCenter=true&multiline=false&width=680&height=50&lines=Roshanpreet+Singh+Dhiman" alt="Name" />
-</a>
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=800&size=32&duration=800&pause=2000&color=00FF41&center=true&vCenter=true&width=900&lines=ROSHANPREET+SINGH+DHIMAN;ROSHANPREET+SINGH+DHIMAN;ROSHANPREET+SINGH+DHIMAN" />
 
-<br/>
-
-<img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=18&duration=2800&pause=1000&color=00F2FE&center=true&vCenter=true&width=600&height=30&lines=Full+Stack+Developer+%26+AI+Engineer;Building+with+Local+LLMs+%7C+Computer+Vision;Desktop+Runtimes+%7C+Civic+Tech+%7C+Fintech;Chitkara+University+%E2%80%94+CS+Engineering" alt="Taglines" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=18&duration=2200&pause=900&color=00FF41&center=true&vCenter=true&width=750&height=30&lines=%3E_%20Full+Stack+Developer+%26+AI+Engineer;%3E_%20Building+with+Local+LLMs+%7C+Computer+Vision;%3E_%20Desktop+Runtimes+%7C+Civic+Tech+%7C+Fintech;%3E_%20rm+-rf+limitations;%3E_%20Hackathon+Mode+ON" alt="Taglines" />
 
 <br/><br/>
 
