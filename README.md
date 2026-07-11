@@ -22,9 +22,8 @@
 
 <br>
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=roshandhiman&show_icons=true&theme=radical&hide_border=true&count_private=true)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=roshandhiman&layout=compact&theme=radical&hide_border=true)
-
-![Streak](https://github-readme-streak-stats.herokuapp.com?user=roshandhiman&theme=radical&hide_border=true)
+![GitHub Stats](https://github-readme-stats-fast.vercel.app/api?username=roshandhiman&show_icons=true&theme=github_dark)
+![Streak](https://github-readme-stats-fast.vercel.app/api/streak?username=roshandhiman&theme=github_dark)
+![Top Languages](https://github-readme-stats-fast.vercel.app/api/top-langs/?username=roshandhiman&layout=compact&theme=github_dark)
 
 </div>
