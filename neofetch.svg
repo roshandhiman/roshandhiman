@@ -1,23 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="571" height="580" viewBox="0 0 571 580">
-<rect width="571" height="580" fill="#0d1117" rx="10"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="590" height="844" viewBox="0 0 590 844">
+<rect width="590" height="844" fill="#0d1117" rx="10"/>
 <style>text { font-family: "SFMono-Regular", "Consolas", "Menlo", monospace; font-size: 15px; }</style>
 <text x="20" y="26" fill="#ff3b30" font-weight="bold">roshandhiman@github</text>
-<text x="20" y="50" fill="#5c6773">--------------------</text>
-<text x="20" y="74"><tspan fill="#ff9500">OS:.................</tspan> <tspan fill="#e6e6e6">macOS, Windows, Linux</tspan></text>
-<text x="20" y="98"><tspan fill="#ff9500">Host:...............</tspan> <tspan fill="#e6e6e6">Chitkara University</tspan></text>
-<text x="20" y="122"><tspan fill="#ff9500">Role:...............</tspan> <tspan fill="#e6e6e6">CSE Student, Sem 3 (2nd Year)</tspan></text>
-<text x="20" y="146"><tspan fill="#ff9500">Uptime:.............</tspan> <tspan fill="#e6e6e6">~2 years coding</tspan></text>
-<text x="20" y="170"><tspan fill="#ff9500">Shell:...............</tspan> <tspan fill="#e6e6e6">bash / zsh</tspan></text>
-<text x="20" y="218"><tspan fill="#ff9500">Languages.Programming:</tspan> <tspan fill="#e6e6e6">Python, Java, C, C++</tspan></text>
-<text x="20" y="242"><tspan fill="#ff9500">Languages.Web:.......</tspan> <tspan fill="#e6e6e6">JavaScript, TypeScript, HTML, CSS</tspan></text>
-<text x="20" y="266"><tspan fill="#ff9500">Languages.Frameworks:</tspan> <tspan fill="#e6e6e6">React, Node.js, MongoDB</tspan></text>
-<text x="20" y="290"><tspan fill="#ff9500">Languages.Real:......</tspan> <tspan fill="#e6e6e6">English, Hindi, Punjabi</tspan></text>
-<text x="20" y="338"><tspan fill="#ff9500">Focus.Current:.......</tspan> <tspan fill="#e6e6e6">DSA (Python) — FAANG/MS/Flipkart prep</tspan></text>
-<text x="20" y="362"><tspan fill="#ff9500">Focus.Domains:.......</tspan> <tspan fill="#e6e6e6">Full-Stack, AI/ML, Computer Vision</tspan></text>
-<text x="20" y="386"><tspan fill="#ff9500">Hobbies:.............</tspan> <tspan fill="#e6e6e6">Basketball, Fitness</tspan></text>
-<text x="20" y="434" fill="#5c6773">--------------------</text>
-<text x="20" y="458" fill="#ff3b30" font-weight="bold">Contact</text>
-<text x="20" y="482" fill="#5c6773">--------------------</text>
-<text x="20" y="506"><tspan fill="#ff9500">GitHub:..............</tspan> <tspan fill="#e6e6e6">github.com/roshandhiman</tspan></text>
-<text x="20" y="530"><tspan fill="#ff9500">LinkedIn:............</tspan> <tspan fill="#e6e6e6">linkedin.com/in/roshandhiman</tspan></text>
+<text x="20" y="50" fill="#5c6773">----------------------</text>
+<text x="20" y="74"><tspan fill="#ff9500">OS:.....................</tspan> <tspan fill="#e6e6e6">macOS, Windows, Linux</tspan></text>
+<text x="20" y="98"><tspan fill="#ff9500">Host:...................</tspan> <tspan fill="#e6e6e6">Chitkara University</tspan></text>
+<text x="20" y="122"><tspan fill="#ff9500">Role:...................</tspan> <tspan fill="#e6e6e6">CSE Student, Sem 3 (2nd Year)</tspan></text>
+<text x="20" y="146"><tspan fill="#ff9500">Location:................</tspan> <tspan fill="#e6e6e6">Khanna, Punjab, India</tspan></text>
+<text x="20" y="170"><tspan fill="#ff9500">Timezone:................</tspan> <tspan fill="#e6e6e6">IST (UTC +5:30)</tspan></text>
+<text x="20" y="194"><tspan fill="#ff9500">Uptime:..................</tspan> <tspan fill="#e6e6e6">~2 years coding</tspan></text>
+<text x="20" y="218"><tspan fill="#ff9500">Shell:...................</tspan> <tspan fill="#e6e6e6">bash / zsh</tspan></text>
+<text x="20" y="242"><tspan fill="#ff9500">Editor:..................</tspan> <tspan fill="#e6e6e6">VS Code</tspan></text>
+<text x="20" y="290" fill="#4fc3f7" font-weight="bold">Languages</text>
+<text x="20" y="314"><tspan fill="#ff9500">Programming:.............</tspan> <tspan fill="#e6e6e6">Python, Java, C, C++</tspan></text>
+<text x="20" y="338"><tspan fill="#ff9500">Web:......................</tspan> <tspan fill="#e6e6e6">JavaScript, TypeScript, HTML, CSS</tspan></text>
+<text x="20" y="362"><tspan fill="#ff9500">Frameworks:...............</tspan> <tspan fill="#e6e6e6">React, Node.js, MongoDB</tspan></text>
+<text x="20" y="386"><tspan fill="#ff9500">Human:....................</tspan> <tspan fill="#e6e6e6">English, Hindi, Punjabi</tspan></text>
+<text x="20" y="434" fill="#4fc3f7" font-weight="bold">Focus</text>
+<text x="20" y="458"><tspan fill="#ff9500">Current:..................</tspan> <tspan fill="#e6e6e6">DSA (Python) — FAANG/MS/Flipkart prep</tspan></text>
+<text x="20" y="482"><tspan fill="#ff9500">Domains:..................</tspan> <tspan fill="#e6e6e6">Full-Stack, AI/ML, Computer Vision</tspan></text>
+<text x="20" y="530" fill="#4fc3f7" font-weight="bold">Hobbies</text>
+<text x="20" y="554"><tspan fill="#ff9500">Sports:...................</tspan> <tspan fill="#e6e6e6">Basketball, Boxing, 8-Ball Pool</tspan></text>
+<text x="20" y="578"><tspan fill="#ff9500">Mind:.....................</tspan> <tspan fill="#e6e6e6">Chess</tspan></text>
+<text x="20" y="602"><tspan fill="#ff9500">Other:....................</tspan> <tspan fill="#e6e6e6">Fitness</tspan></text>
+<text x="20" y="650" fill="#5c6773">----------------------</text>
+<text x="20" y="674" fill="#ff3b30" font-weight="bold">Contact</text>
+<text x="20" y="698" fill="#5c6773">----------------------</text>
+<text x="20" y="722"><tspan fill="#ff9500">Email:....................</tspan> <tspan fill="#e6e6e6">roshanpreetsinghdhiman@gmail.com</tspan></text>
+<text x="20" y="746"><tspan fill="#ff9500">GitHub:...................</tspan> <tspan fill="#e6e6e6">github.com/roshandhiman</tspan></text>
+<text x="20" y="770"><tspan fill="#ff9500">LinkedIn:.................</tspan> <tspan fill="#e6e6e6">linkedin.com/in/roshandhiman</tspan></text>
+<text x="20" y="794"><tspan fill="#ff9500">Instagram:................</tspan> <tspan fill="#e6e6e6">@roshanpreetsingh.3</tspan></text>
 </svg>
