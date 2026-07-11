@@ -9,30 +9,7 @@
 </td>
 <td width="50%" valign="top">
 
-```
-roshandhiman@github
---------------------
-OS: ................ macOS, Windows, Linux
-Host: .............. Chitkara University
-Role: .............. CSE Student, Sem 3 (2nd Year)
-Uptime: ............ ~2 years coding
-Shell: ............. bash / zsh
-
-Languages.Programming: .. Python, Java, C, C++
-Languages.Web: .......... JavaScript, TypeScript, HTML, CSS
-Languages.Frameworks: ... React, Node.js, MongoDB
-Languages.Real: ......... English, Hindi, Punjabi
-
-Focus.Current: .......... DSA (Python) — FAANG/MS/Flipkart prep
-Focus.Domains: .......... Full-Stack, AI/ML, Computer Vision
-Hobbies: ................ Basketball, Fitness
-
---------------------
-Contact
---------------------
-GitHub: ............. github.com/roshandhiman
-LinkedIn: ............ linkedin.com/in/roshandhiman
-```
+<img src="neofetch.svg" width="480"/>
 
 </td>
 </tr>
