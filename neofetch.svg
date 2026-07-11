@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="590" height="844" viewBox="0 0 590 844">
-<rect width="590" height="844" fill="#0d1117" rx="10"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="590" height="868" viewBox="0 0 590 868">
+<rect width="590" height="868" fill="#0d1117" rx="10"/>
 <style>text { font-family: "SFMono-Regular", "Consolas", "Menlo", monospace; font-size: 15px; }</style>
 <text x="20" y="26" fill="#ff3b30" font-weight="bold">roshandhiman@github</text>
 <text x="20" y="50" fill="#5c6773">----------------------</text>
@@ -30,4 +30,5 @@
 <text x="20" y="746"><tspan fill="#ff9500">GitHub:...................</tspan> <tspan fill="#e6e6e6">github.com/roshandhiman</tspan></text>
 <text x="20" y="770"><tspan fill="#ff9500">LinkedIn:.................</tspan> <tspan fill="#e6e6e6">linkedin.com/in/roshandhiman</tspan></text>
 <text x="20" y="794"><tspan fill="#ff9500">Instagram:................</tspan> <tspan fill="#e6e6e6">@roshanpreetsingh.3</tspan></text>
+<text x="20" y="818"><tspan fill="#ff9500">LeetCode:.................</tspan> <tspan fill="#e6e6e6">leetcode.com/roshanpreetsingh</tspan></text>
 </svg>
