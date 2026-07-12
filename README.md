@@ -22,8 +22,7 @@
 
 <br>
 
-![GitHub Stats](https://github-readme-stats-fast.vercel.app/api?username=roshandhiman&show_icons=true&theme=github_dark)
-![Streak](https://github-readme-stats-fast.vercel.app/api/streak?username=roshandhiman&theme=github_dark)
-![Top Languages](https://github-readme-stats-fast.vercel.app/api/top-langs/?username=roshandhiman&layout=compact&theme=github_dark)
+![GitHub Stats](https://gitstatcard.vercel.app/api/card/roshandhiman)
+
 
 </div>
