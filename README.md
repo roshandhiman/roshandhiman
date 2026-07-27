@@ -29,7 +29,7 @@
 
 <br>
 
-![GitHub Stats](https://gitstatcard.vercel.app/api/card/roshandhiman?theme=github-dark)
+![GitHub Stats](https://gitstatcard.vercel.app/api/card/roshandhiman?theme=github-cyber-center)
 
 
 </div>
