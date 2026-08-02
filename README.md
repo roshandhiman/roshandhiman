@@ -9,8 +9,6 @@
 
   <!-- LeetCode Metrics Card & GitHub Stats Card -->
   <p align="center">
-    <img src="leetcode.svg" width="460" alt="LeetCode Metrics Card" />
-    &nbsp;&nbsp;
     <img src="https://gitstatcard.vercel.app/api/card/roshandhiman?theme=github-cyber-center" width="460" alt="GitHub Stats Card" />
   </p>
 
