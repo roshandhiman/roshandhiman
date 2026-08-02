@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 42" width="160" height="42">
+  <defs>
+    <filter id="glow-portfolio" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <style>
+    .btn {
+      transition: transform 0.2s ease-in-out;
+      cursor: pointer;
+    }
+    .btn-bg {
+      fill: #080c14;
+      stroke: #1e293b;
+      stroke-width: 1.5;
+      transition: stroke 0.25s ease-in-out, fill 0.25s ease-in-out;
+    }
+    .btn-text {
+      font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      fill: #e2e8f0;
+      letter-spacing: 0.5px;
+      transition: fill 0.25s ease-in-out;
+    }
+    .btn-icon {
+      fill: #a0aec0;
+      transition: fill 0.25s ease-in-out;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+    .btn:hover .btn-bg {
+      stroke: #00f0ff;
+      fill: #00f0ff15;
+    }
+    .btn:hover .btn-text {
+      fill: #ffffff;
+    }
+    .btn:hover .btn-icon {
+      fill: #00f0ff;
+    }
+  </style>
+  <g class="btn">
+    <!-- Pill Border and Background -->
+    <rect class="btn-bg" width="158" height="40" x="1" y="1" rx="20" />
+    
+    <!-- Portfolio (Briefcase/Code) Icon -->
+    <g transform="translate(18, 11)" class="btn-icon">
+      <!-- Path representing a globe / website icon -->
+      <path d="M10,0 C4.477,0 0,4.477 0,10 C0,15.523 4.477,20 10,20 C15.523,20 20,15.523 20,10 C20,4.477 15.523,0 10,0 Z M17.91,7 L14.73,7 C14.39,4.42 13.72,2.3 12.87,1.1 C15.22,2.05 17,4.3 17.91,7 Z M10,2.03 C10.98,3.28 11.75,5.52 12.04,7 L7.96,7 C8.25,5.52 9.02,3.28 10,2.03 Z M2.09,13 C2.03,12.03 2,11.03 2,10 C2,8.97 2.03,7.97 2.09,7 L5.27,7 C5.19,8 5.14,9 5.14,10 C5.14,11 5.19,12 5.27,13 L2.09,13 Z M2.09,7 C3,4.3 4.78,2.05 7.13,1.1 C6.28,2.3 5.61,4.42 5.27,7 L2.09,7 Z M7.13,18.9 C4.78,17.95 3,15.7 2.09,13 L5.27,13 C5.61,15.58 6.28,17.7 7.13,18.9 Z M7.96,13 L12.04,13 C11.75,14.48 10.98,16.72 10,17.97 C9.02,16.72 8.25,14.48 7.96,13 Z M10,18 C10.02,18 10.01,18 10,18 Z M12.87,18.9 C13.72,17.7 14.39,15.58 14.73,13 L17.91,13 C17,15.7 15.22,17.95 12.87,18.9 Z M14.73,7 C14.39,7.01 14.72,7.01 14.73,7 L17.91,7 C17.97,7.97 18,8.97 18,10 C18,11.03 17.97,12.03 17.91,13 L14.73,13 C14.81,12 14.86,11 14.86,10 C14.86,9 14.81,8 14.73,7 Z" />
+    </g>
+    
+    <!-- Text -->
+    <text x="76" y="25" class="btn-text" text-anchor="middle">Portfolio</text>
+  </g>
+</svg>

@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 220" width="480" height="220">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bg-grad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#141a29" />
+      <stop offset="100%" stop-color="#080c14" />
+    </radialGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="glow-orange" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-green" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .title {
+      font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 800;
+      fill: #ffa116;
+      letter-spacing: 0.5px;
+    }
+    .mono {
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    }
+    .text-lbl {
+      fill: #a0aec0;
+      font-size: 13px;
+    }
+    .text-val {
+      fill: #ffffff;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .easy-color { fill: #00b8a3; }
+    .medium-color { fill: #ffb700; }
+    .hard-color { fill: #ef4743; }
+
+    /* Animations */
+    @keyframes drawCircle {
+      from { stroke-dashoffset: 408; }
+      to { stroke-dashoffset: 338; }
+    }
+    .progress-circle {
+      stroke-dasharray: 408;
+      stroke-dashoffset: 408;
+      animation: drawCircle 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      animation-delay: 0.5s;
+    }
+
+    @keyframes drawBarEasy {
+      from { width: 0; }
+      to { width: 72px; }
+    }
+    .bar-easy {
+      animation: drawBarEasy 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      animation-delay: 0.8s;
+    }
+
+    @keyframes drawBarMedium {
+      from { width: 0; }
+      to { width: 90px; }
+    }
+    .bar-medium {
+      animation: drawBarMedium 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      animation-delay: 1s;
+    }
+
+    @keyframes drawBarHard {
+      from { width: 0; }
+      to { width: 45px; }
+    }
+    .bar-hard {
+      animation: drawBarHard 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      animation-delay: 1.2s;
+    }
+
+    @keyframes pulseText {
+      0%, 100% { opacity: 0.8; }
+      50% { opacity: 1; }
+    }
+    .pulse-solved {
+      animation: pulseText 2s ease-in-out infinite;
+    }
+
+    /* Hover effect */
+    .leetcode-card {
+      transition: transform 0.3s ease, stroke 0.3s ease;
+    }
+    .leetcode-card:hover {
+      transform: translateY(-2px);
+    }
+  </style>
+
+  <!-- Card Border & Background -->
+  <g class="leetcode-card">
+    <rect width="480" height="220" rx="14" fill="url(#bg-grad)" stroke="#1e293b" stroke-width="2" />
+    <rect width="478" height="218" x="1" y="1" rx="13" fill="none" stroke="#2e3d5a" stroke-width="1" opacity="0.4" />
+
+    <!-- LeetCode Logo Icon Top Right -->
+    <path d="M 430,30 L 442,42 L 450,34 L 438,22 Z" fill="#ffa116" opacity="0.8" />
+    <path d="M 438,22 L 434,26 L 442,34 L 446,30 Z" fill="#ffffff" opacity="0.8" />
+    <path d="M 426,34 L 434,42 L 442,34 L 434,26 Z" fill="#b36200" opacity="0.6" />
+
+    <!-- Header Title -->
+    <g transform="translate(30, 35)">
+      <!-- LeetCode logo path -->
+      <path d="M0,5 L3,2 L14,13 L11,16 Z" fill="#ffa116" />
+      <path d="M9,0 L20,11 L17,14 L6,3 Z" fill="#ffffff" />
+      <text x="25" y="10" class="title" font-size="18" filter="url(#glow-orange)">LEETCODE METRICS</text>
+    </g>
+
+    <!-- ==================== LEFT SIDE: PROGRESS RING ==================== -->
+    <g transform="translate(100, 130)">
+      <!-- Background Circle -->
+      <circle cx="0" cy="0" r="65" fill="none" stroke="#101726" stroke-width="10" />
+      
+      <!-- Colored Progress Arc -->
+      <circle cx="0" cy="0" r="65" fill="none" stroke="url(#orange-gradient)" stroke-width="10" 
+              stroke-linecap="round" class="progress-circle" transform="rotate(-90)" filter="url(#glow-orange)" />
+      
+      <!-- Linear gradient for progress arc -->
+      <linearGradient id="orange-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ffa116" />
+        <stop offset="100%" stop-color="#ff5f00" />
+      </linearGradient>
+
+      <!-- Central Stats Texts -->
+      <text x="0" y="-5" font-family="'SF Pro Display', sans-serif" font-weight="900" font-size="28" fill="#ffffff" text-anchor="middle" class="pulse-solved">342</text>
+      <text x="0" y="15" font-family="'SF Pro Display', sans-serif" font-weight="600" font-size="11" fill="#ffa116" text-anchor="middle" letter-spacing="1.5">SOLVED</text>
+      <text x="0" y="27" font-family="SFMono-Regular, Consolas, monospace" font-size="9" fill="#a0aec0" text-anchor="middle">target: 2,000</text>
+    </g>
+
+    <!-- ==================== RIGHT SIDE: DIFFICULTY BREAKDOWN ==================== -->
+    <g transform="translate(225, 65)" class="mono">
+      <!-- Easy Row -->
+      <g transform="translate(0, 0)">
+        <text x="0" y="15" class="text-lbl easy-color" font-weight="bold">Easy</text>
+        <text x="65" y="15" class="text-val">120<tspan fill="#4a5568" font-size="11">/650</tspan></text>
+        
+        <!-- Progress Bar Background -->
+        <rect x="0" y="24" width="220" height="8" rx="4" fill="#101726" stroke="#1e293b" stroke-width="1" />
+        <!-- Progress Bar Filled -->
+        <rect x="0" y="24" width="0" height="8" rx="4" fill="#00b8a3" class="bar-easy" filter="url(#glow-green)" />
+      </g>
+
+      <!-- Medium Row -->
+      <g transform="translate(0, 48)">
+        <text x="0" y="15" class="text-lbl medium-color" font-weight="bold">Medium</text>
+        <text x="65" y="15" class="text-val">180<tspan fill="#4a5568" font-size="11">/1,200</tspan></text>
+        
+        <!-- Progress Bar Background -->
+        <rect x="0" y="24" width="220" height="8" rx="4" fill="#101726" stroke="#1e293b" stroke-width="1" />
+        <!-- Progress Bar Filled -->
+        <rect x="0" y="24" width="0" height="8" rx="4" fill="#ffb700" class="bar-medium" />
+      </g>
+
+      <!-- Hard Row -->
+      <g transform="translate(0, 96)">
+        <text x="0" y="15" class="text-lbl hard-color" font-weight="bold">Hard</text>
+        <text x="65" y="15" class="text-val">42<tspan fill="#4a5568" font-size="11">/650</tspan></text>
+        
+        <!-- Progress Bar Background -->
+        <rect x="0" y="24" width="220" height="8" rx="4" fill="#101726" stroke="#1e293b" stroke-width="1" />
+        <!-- Progress Bar Filled -->
+        <rect x="0" y="24" width="0" height="8" rx="4" fill="#ef4743" class="bar-hard" />
+      </g>
+    </g>
+
+    <!-- Bottom Stat Badge -->
+    <g transform="translate(225, 192)" class="mono" font-size="10">
+      <rect x="0" y="-12" width="220" height="18" rx="4" fill="#06090e" stroke="#1e293b" stroke-width="1" />
+      <text x="10" y="1" fill="#a0aec0">RANKING:</text>
+      <text x="75" y="1" fill="#ffa116" font-weight="bold">Top 8.5%</text>
+      <text x="135" y="1" fill="#a0aec0">| RATING:</text>
+      <text x="185" y="1" fill="#00f0ff" font-weight="bold">1750</text>
+    </g>
+  </g>
+</svg>

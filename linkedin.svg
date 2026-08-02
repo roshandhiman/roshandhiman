@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 42" width="160" height="42">
+  <defs>
+    <filter id="glow-linkedin" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <style>
+    .btn {
+      transition: transform 0.2s ease-in-out;
+      cursor: pointer;
+    }
+    .btn-bg {
+      fill: #080c14;
+      stroke: #1e293b;
+      stroke-width: 1.5;
+      transition: stroke 0.25s ease-in-out, fill 0.25s ease-in-out;
+    }
+    .btn-text {
+      font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      fill: #e2e8f0;
+      letter-spacing: 0.5px;
+      transition: fill 0.25s ease-in-out;
+    }
+    .btn-icon {
+      fill: #a0aec0;
+      transition: fill 0.25s ease-in-out;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+    .btn:hover .btn-bg {
+      stroke: #0077b5;
+      fill: #0077b515;
+    }
+    .btn:hover .btn-text {
+      fill: #ffffff;
+    }
+    .btn:hover .btn-icon {
+      fill: #0077b5;
+    }
+  </style>
+  <g class="btn">
+    <!-- Pill Border and Background -->
+    <rect class="btn-bg" width="158" height="40" x="1" y="1" rx="20" />
+    
+    <!-- LinkedIn Icon -->
+    <!-- path representing "in" LinkedIn logo -->
+    <g transform="translate(18, 12)" class="btn-icon">
+      <path d="M19,0 H3 C1.3,0 0,1.3 0,3 v16 c0,1.7 1.3,3 3,3 h16 c1.7,0 3,-1.3 3,-3 V3 C22,1.3 20.7,0 19,0 z M6.5,18.3 H3.3 V8 h3.3 V18.3 z M4.9,6.6 c-1.1,0 -1.9,-0.9 -1.9,-2 c0,-1.1 0.9,-2 1.9,-2 c1.1,0 1.9,0.9 1.9,2 C6.8,5.7 5.9,6.6 4.9,6.6 z M18.7,18.3 h-3.3 v-5.1 c0,-1.2 0,-2.8 -1.7,-2.8 c-1.7,0 -2,1.3 -2,2.7 v5.2 H8.4 V8 h3.2 v1.4 h0 c0.4,-0.8 1.5,-1.7 3.1,-1.7 c3.3,0 3.9,2.2 3.9,5.1 V18.3 z" />
+    </g>
+    
+    <!-- Text -->
+    <text x="76" y="25" class="btn-text" text-anchor="middle">LinkedIn</text>
+  </g>
+</svg>
