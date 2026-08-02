@@ -1,1 +1,368 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 1020" width="950" height="1020">  <defs>    <linearGradient id="card-bg" x1="0%" y1="0%" x2="0%" y2="100%">      <stop offset="0%" stop-color="#0a0e14" />      <stop offset="50%" stop-color="#111820" />      <stop offset="100%" stop-color="#0a0e14" />    </linearGradient>     <filter id="matrix-blur" x="-20%" y="-20%" width="140%" height="140%">      <feGaussianBlur stdDeviation="1.8" />    </filter>     <filter id="green-glow" x="-30%" y="-30%" width="160%" height="160%">      <feGaussianBlur stdDeviation="5" result="blur" />      <feMerge>        <feMergeNode in="blur" />        <feMergeNode in="SourceGraphic" />      </feMerge>    </filter>     <filter id="img-shadow" x="-5%" y="-2%" width="110%" height="108%">      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000000" flood-opacity="0.7" />    </filter>     <!-- Clip the center image area -->    <clipPath id="photo-clip">      <rect x="305" y="110" width="340" height="810" rx="14" />    </clipPath>  </defs>   <style>    .title-main {      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;      font-weight: 800;      font-size: 26px;      fill: #f0f6fc;      letter-spacing: 1px;    }    .subtitle {      font-family: "SFMono-Regular", Consolas, monospace;      font-size: 13px;      fill: #00f0ff;      letter-spacing: 0.5px;    }    .section-head {      font-family: -apple-system, BlinkMacSystemFont, sans-serif;      font-weight: 700;      font-size: 14px;      fill: #00f0ff;      letter-spacing: 1px;      text-transform: uppercase;    }    .mono {      font-family: "SFMono-Regular", Consolas, monospace;      font-size: 13px;    }    .lbl { fill: #8b949e; font-weight: 600; }    .val { fill: #c9d1d9; }    .val-b { fill: #f0f6fc; font-weight: 600; }
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 1020" width="950" height="1020">
+  <defs>
+    <linearGradient id="card-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e14" />
+      <stop offset="50%" stop-color="#111820" />
+      <stop offset="100%" stop-color="#0a0e14" />
+    </linearGradient>
+
+    <filter id="matrix-blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.8" />
+    </filter>
+
+    <filter id="green-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="img-shadow" x="-5%" y="-2%" width="110%" height="108%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000000" flood-opacity="0.7" />
+    </filter>
+
+    <!-- Clip the center image area -->
+    <clipPath id="photo-clip">
+      <rect x="305" y="110" width="340" height="810" rx="14" />
+    </clipPath>
+  </defs>
+
+  <style>
+    .title-main {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 800;
+      font-size: 26px;
+      fill: #f0f6fc;
+      letter-spacing: 1px;
+    }
+    .subtitle {
+      font-family: "SFMono-Regular", Consolas, monospace;
+      font-size: 13px;
+      fill: #00f0ff;
+      letter-spacing: 0.5px;
+    }
+    .section-head {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      fill: #00f0ff;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .mono {
+      font-family: "SFMono-Regular", Consolas, monospace;
+      font-size: 13px;
+    }
+    .lbl { fill: #8b949e; font-weight: 600; }
+    .val { fill: #c9d1d9; }
+    .val-b { fill: #f0f6fc; font-weight: 600; }
+    .mx {
+      font-family: "SFMono-Regular", Consolas, monospace;
+      font-size: 10px;
+      fill: #22c55e;
+      opacity: 0.18;
+    }
+    .footer-text {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 14px;
+      fill: #484f58;
+      font-weight: 500;
+    }
+
+    /* Smooth fade-in for content */
+    @keyframes revealContent {
+      0%   { opacity: 0; }
+      55%  { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    .content { animation: revealContent 2.4s ease forwards; }
+
+    /* Door slide */
+    @keyframes doorL {
+      0%   { transform: translateX(0); }
+      42%  { transform: translateX(0); }
+      100% { transform: translateX(-476px); }
+    }
+    @keyframes doorR {
+      0%   { transform: translateX(0); }
+      42%  { transform: translateX(0); }
+      100% { transform: translateX(476px); }
+    }
+    .door-l { animation: doorL 2.4s cubic-bezier(.77,0,.175,1) forwards; }
+    .door-r { animation: doorR 2.4s cubic-bezier(.77,0,.175,1) forwards; }
+
+    /* Hacker pulsing text on doors */
+    @keyframes hackPulse {
+      0%,100% { opacity: 0.6; fill: #22c55e; }
+      50% { opacity: 1; fill: #4ade80; }
+    }
+    .hack-pulse {
+      font-family: "SFMono-Regular", Consolas, monospace;
+      font-weight: bold;
+      animation: hackPulse 1s infinite;
+    }
+    @keyframes fadeOut {
+      0%   { opacity: 1; }
+      38%  { opacity: 1; }
+      48%  { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    .door-fade { animation: fadeOut 2.4s ease forwards; }
+  </style>
+
+  <!-- Canvas -->
+  <rect width="950" height="1020" rx="14" fill="url(#card-bg)" stroke="#21262d" stroke-width="1" />
+
+  <!-- ======== MATRIX RAIN (blurred, behind the info cards) ======== -->
+  <g filter="url(#matrix-blur)">
+    <!-- Left columns -->
+    <text class="mx" x="55"  y="140">01001001 01001110 01001001 01010100</text>
+    <text class="mx" x="55"  y="160">#include &lt;iostream&gt;</text>
+    <text class="mx" x="55"  y="180">void* ptr = 0x7FFE4A;</text>
+    <text class="mx" x="55"  y="200">SELECT * FROM users WHERE</text>
+    <text class="mx" x="55"  y="220">id = 1; DROP TABLE --</text>
+    <text class="mx" x="55"  y="240">int main() { return 0; }</text>
+    <text class="mx" x="55"  y="260">std::vector&lt;int&gt; v;</text>
+    <text class="mx" x="55"  y="280">while(core_active) {</text>
+    <text class="mx" x="55"  y="300">  process(data);</text>
+    <text class="mx" x="55"  y="320">01101110 01100101 01110100</text>
+    <text class="mx" x="55"  y="340">CUDA_KERNEL_INIT();</text>
+    <text class="mx" x="55"  y="360">0xDEADBEEF 0xCAFEBABE</text>
+    <text class="mx" x="55"  y="380">chmod +x exploit.sh</text>
+    <text class="mx" x="55"  y="400">ssh root@192.168.1.1</text>
+    <text class="mx" x="55"  y="420">sudo rm -rf /var/log/*</text>
+    <text class="mx" x="55"  y="440">iptables -A INPUT -j DROP</text>
+    <text class="mx" x="55"  y="460">nmap -sV -O target_host</text>
+    <text class="mx" x="55"  y="480">01110011 01110001 01101100</text>
+    <text class="mx" x="55"  y="500">INSERT INTO sessions</text>
+
+    <text class="mx" x="55"  y="580">git commit -m "exploit"</text>
+    <text class="mx" x="55"  y="600">docker exec -it shell</text>
+    <text class="mx" x="55"  y="620">CONNECT_SOCKET: OK</text>
+    <text class="mx" x="55"  y="640">sudo systemctl restart</text>
+    <text class="mx" x="55"  y="660">0x0000FF12 DEADCODE</text>
+    <text class="mx" x="55"  y="680">python3 payload.py --go</text>
+    <text class="mx" x="55"  y="700">g++ -O3 -std=c++20 -o a</text>
+    <text class="mx" x="55"  y="720">CREATE TABLE exploits (</text>
+    <text class="mx" x="55"  y="740">  id INT PRIMARY KEY,</text>
+    <text class="mx" x="55"  y="760">  target VARCHAR(255)</text>
+    <text class="mx" x="55"  y="780">);</text>
+    <text class="mx" x="55"  y="800">hydra -l admin -P pass</text>
+    <text class="mx" x="55"  y="820">john --wordlist=rockyou</text>
+    <text class="mx" x="55"  y="840">wireshark -i eth0 -k</text>
+    <text class="mx" x="55"  y="860">metasploit&gt; use exploit</text>
+    <text class="mx" x="55"  y="880">01000001 01000011 01000011</text>
+
+    <!-- Right columns -->
+    <text class="mx" x="672" y="140">class GraphNode {};</text>
+    <text class="mx" x="672" y="160">01110010 01100101 01100011</text>
+    <text class="mx" x="672" y="180">npm run build --prod</text>
+    <text class="mx" x="672" y="200">db.collection.find({});</text>
+    <text class="mx" x="672" y="220">import torch, cv2, sys</text>
+    <text class="mx" x="672" y="240">0x89ABCDEF 0x01234567</text>
+    <text class="mx" x="672" y="260">const [s, setS] = use</text>
+    <text class="mx" x="672" y="280">DFS_SEARCH_OPTIMAL()</text>
+    <text class="mx" x="672" y="300">01010011 01010001 01001100</text>
+    <text class="mx" x="672" y="320">thread_pool.submit(fn)</text>
+    <text class="mx" x="672" y="340">socket.listen(1337)</text>
+    <text class="mx" x="672" y="360">SELECT version();</text>
+    <text class="mx" x="672" y="380">ALTER TABLE access DROP</text>
+    <text class="mx" x="672" y="400">exec('rm -rf /');</text>
+    <text class="mx" x="672" y="420">reverse_shell(443)</text>
+    <text class="mx" x="672" y="440">Buffer.from(exploit)</text>
+    <text class="mx" x="672" y="460">hashcat -m 1000 -a 0</text>
+    <text class="mx" x="672" y="480">ping -c 99 localhost</text>
+    <text class="mx" x="672" y="500">01000100 01010011 01000001</text>
+
+    <text class="mx" x="672" y="580">FAANG_INTERVIEW_MODE</text>
+    <text class="mx" x="672" y="600">binary_search_tree()</text>
+    <text class="mx" x="672" y="620">dynamic_programming()</text>
+    <text class="mx" x="672" y="640">0x3F3F3F3F INF_LIMIT</text>
+    <text class="mx" x="672" y="660">matrix_multiply(A,B)</text>
+    <text class="mx" x="672" y="680">dijkstra(graph, src)</text>
+    <text class="mx" x="672" y="700">01100011 01110000 01110000</text>
+    <text class="mx" x="672" y="720">segment_tree.update()</text>
+    <text class="mx" x="672" y="740">fenwick_tree.query(l,r)</text>
+    <text class="mx" x="672" y="760">bellman_ford(edges, V)</text>
+    <text class="mx" x="672" y="780">floyd_warshall(dist[][])</text>
+    <text class="mx" x="672" y="800">trie.insert("exploit")</text>
+    <text class="mx" x="672" y="820">KMP_search(pat, txt)</text>
+    <text class="mx" x="672" y="840">AVL_tree.rebalance()</text>
+    <text class="mx" x="672" y="860">RED_BLACK_insert(node)</text>
+    <text class="mx" x="672" y="880">BFS_level_order(root)</text>
+  </g>
+
+  <!-- ======== MAIN CONTENT ======== -->
+  <g class="content">
+
+    <!-- Header -->
+    <text class="title-main" x="50" y="65">ROSHAN DHIMAN</text>
+    <text class="subtitle" x="50" y="88">CSE STUDENT  //  SOFTWARE ENGINEER</text>
+
+    <!-- ===== LEFT COLUMN ===== -->
+    <g transform="translate(50, 110)" class="mono">
+
+      <!-- Specifications -->
+      <rect x="0" y="0" width="238" height="390" rx="10" fill="#0f1318" fill-opacity="0.92" stroke="#1b2028" stroke-width="1" />
+      <text x="18" y="32" class="section-head">Specifications</text>
+      <line x1="18" y1="42" x2="220" y2="42" stroke="#1b2028" stroke-width="1" />
+
+      <text x="18" y="70"  class="lbl">OS</text>
+      <text x="18" y="86"  class="val">macOS / Windows / Linux</text>
+
+      <text x="18" y="115" class="lbl">Host</text>
+      <text x="18" y="131" class="val-b">Chitkara University</text>
+
+      <text x="18" y="160" class="lbl">Role</text>
+      <text x="18" y="176" class="val">CSE Student (Sem 3)</text>
+
+      <text x="18" y="205" class="lbl">Location</text>
+      <text x="18" y="221" class="val">Khanna, Punjab, India</text>
+
+      <text x="18" y="250" class="lbl">Timezone</text>
+      <text x="18" y="266" class="val">IST (UTC +5:30)</text>
+
+      <text x="18" y="295" class="lbl">Uptime</text>
+      <text x="18" y="311" class="val-b">~2 Years Coding</text>
+
+      <text x="18" y="340" class="lbl">Shell / Editor</text>
+      <text x="18" y="356" class="val">zsh / VS Code</text>
+
+      <!-- Communication -->
+      <g transform="translate(0, 410)">
+        <rect x="0" y="0" width="238" height="395" rx="10" fill="#0f1318" fill-opacity="0.92" stroke="#1b2028" stroke-width="1" />
+        <text x="18" y="32" class="section-head">Communication</text>
+        <line x1="18" y1="42" x2="220" y2="42" stroke="#1b2028" stroke-width="1" />
+
+        <text x="18" y="70"  class="lbl">Email</text>
+        <text x="18" y="86"  class="val" font-size="11">roshanpreetsinghdhiman</text>
+        <text x="18" y="100" class="val" font-size="11">@gmail.com</text>
+
+        <text x="18" y="130" class="lbl">GitHub</text>
+        <text x="18" y="146" class="val-b">github.com/roshandhiman</text>
+
+        <text x="18" y="176" class="lbl">LinkedIn</text>
+        <text x="18" y="192" class="val">linkedin.com/in/</text>
+        <text x="18" y="206" class="val">roshandhiman</text>
+
+        <text x="18" y="236" class="lbl">Instagram</text>
+        <text x="18" y="252" class="val">@roshanpreetsingh.3</text>
+
+        <text x="18" y="282" class="lbl">LeetCode</text>
+        <text x="18" y="298" class="val">leetcode.com/</text>
+        <text x="18" y="312" class="val">roshanpreetsingh</text>
+      </g>
+    </g>
+
+    <!-- ===== CENTER: FULL VERTICAL PORTRAIT ===== -->
+    <rect x="303" y="108" width="344" height="814" rx="16" fill="none" stroke="#1b2028" stroke-width="1.5" />
+    <rect x="305" y="110" width="340" height="810" rx="14" fill="#0a0e14" filter="url(#img-shadow)" />
+    <image href="data:image/jpeg;base64,{img_b64}" x="305" y="110" width="340" height="822" clip-path="url(#photo-clip)" preserveAspectRatio="xMidYMin slice" />
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <g transform="translate(662, 110)" class="mono">
+
+      <!-- Tech Stack -->
+      <rect x="0" y="0" width="238" height="390" rx="10" fill="#0f1318" fill-opacity="0.92" stroke="#1b2028" stroke-width="1" />
+      <text x="18" y="32" class="section-head">Tech Stack</text>
+      <line x1="18" y1="42" x2="220" y2="42" stroke="#1b2028" stroke-width="1" />
+
+      <text x="18" y="70"  class="lbl">Languages</text>
+      <text x="18" y="86"  class="val-b">C++, Python, Java, C, SQL</text>
+
+      <text x="18" y="115" class="lbl">Web Development</text>
+      <text x="18" y="131" class="val">JavaScript, TypeScript,</text>
+      <text x="18" y="145" class="val">HTML5, CSS3</text>
+
+      <text x="18" y="174" class="lbl">Frameworks</text>
+      <text x="18" y="190" class="val-b">React, Node.js, MongoDB</text>
+
+      <text x="18" y="219" class="lbl">Databases</text>
+      <text x="18" y="235" class="val-b">MongoDB, SQL</text>
+
+      <text x="18" y="264" class="lbl">Human Languages</text>
+      <text x="18" y="280" class="val">English, Hindi, Punjabi</text>
+
+      <text x="18" y="309" class="lbl">Dev Tools</text>
+      <text x="18" y="325" class="val">Git, GitHub, Linux Shell</text>
+
+      <!-- Focus & Interests -->
+      <g transform="translate(0, 410)">
+        <rect x="0" y="0" width="238" height="395" rx="10" fill="#0f1318" fill-opacity="0.92" stroke="#1b2028" stroke-width="1" />
+        <text x="18" y="32" class="section-head">Focus &amp; Interests</text>
+        <line x1="18" y1="42" x2="220" y2="42" stroke="#1b2028" stroke-width="1" />
+
+        <text x="18" y="70"  class="lbl">Current Focus</text>
+        <text x="18" y="86"  class="val-b">DSA (C++)</text>
+        <text x="18" y="100" class="val" font-size="12">FAANG / Top Tier Prep</text>
+
+        <text x="18" y="130" class="lbl">Domains</text>
+        <text x="18" y="146" class="val">Full-Stack Development</text>
+        <text x="18" y="160" class="val">AI/ML, Computer Vision</text>
+
+        <text x="18" y="190" class="lbl">Sports</text>
+        <text x="18" y="206" class="val-b">Basketball, Boxing</text>
+        <text x="18" y="220" class="val">8-Ball Pool, Chess</text>
+
+        <text x="18" y="250" class="lbl">Other</text>
+        <text x="18" y="266" class="val">Fitness, Tech Exploration</text>
+      </g>
+    </g>
+
+    <!-- Footer -->
+    <text x="475" y="965" class="footer-text" text-anchor="middle">By Roshanpreet Singh</text>
+  </g>
+
+  <!-- ======== DOOR OVERLAY: HACKER ROBOT ACTIVATING ======== -->
+  <!-- Left Door -->
+  <g class="door-l">
+    <rect x="0" y="0" width="476" height="1020" fill="#050810" />
+    <!-- Scanlines -->
+    <line x1="0" y1="180" x2="476" y2="180" stroke="#22c55e" stroke-width="0.5" opacity="0.15" />
+    <line x1="0" y1="360" x2="476" y2="360" stroke="#22c55e" stroke-width="0.5" opacity="0.15" />
+    <line x1="0" y1="510" x2="476" y2="510" stroke="#22c55e" stroke-width="0.8" opacity="0.25" />
+    <line x1="0" y1="660" x2="476" y2="660" stroke="#22c55e" stroke-width="0.5" opacity="0.15" />
+    <line x1="0" y1="840" x2="476" y2="840" stroke="#22c55e" stroke-width="0.5" opacity="0.15" />
+    <!-- Seam glow -->
+    <line x1="475" y1="0" x2="475" y2="1020" stroke="#22c55e" stroke-width="2" filter="url(#green-glow)" />
+
+    <g class="door-fade">
+      <!-- ASCII Robot Left Half -->
+      <text font-family="SFMono-Regular, Consolas, monospace" font-size="11" fill="#22c55e" opacity="0.5" text-anchor="end" x="460" y="400">     ___________</text>
+      <text font-family="SFMono-Regular, Consolas, monospace" font-size="11" fill="#22c55e" opacity="0.5" text-anchor="end" x="460" y="414">    /           \</text>
+      <text font-family="SFMono-Regular, Consolas, monospace" font-size="11" fill="#22c55e" opacity="0.5" text-anchor="end" x="460" y="428">   |  [O]   [O]  |</text>
+      <text font-family="SFMono-Regular, Consolas, monospace" font-size="11" fill="#22c55e" opacity="0.5" text-anchor="end" x="460" y="442">   |     ___     |</text>
+      <text font-family="SFMono-Regular, Consolas, monospace" font-size="11" fill="#22c55e" opacity="0.5" text-anchor="end" x="460" y="456">   |    |___|    |</text>
+      <text font-family="SFMono-Regular, Consolas, monospace" font-size="11" fill="#22c55e" opacity="0.5" text-anchor="end" x="460" y="470">    \___________/</text>
+      <text font-family="SFMono-Regular, Consolas, monospace" font-size="11" fill="#22c55e" opacity="0.5" text-anchor="end" x="460" y="484">     |  |||||  |</text>
+      <text font-family="SFMono-Regular, Consolas, monospace" font-size="11" fill="#22c55e" opacity="0.5" text-anchor="end" x="460" y="498">     |_________|</text>
+
+      <text class="hack-pulse" font-size="16" text-anchor="end" x="460" y="540" letter-spacing="3">[ SYSTEM OVERRIDE ]</text>
+      <text font-family="SFMono-Regular, Consolas, monospace" font-size="12" fill="#22c55e" text-anchor="end" x="460" y="565" opacity="0.8">ROBOTIC CORE: ACTIVATING...</text>
+      <text font-family="SFMono-Regular, Consolas, monospace" font-size="10" fill="#4b5563" text-anchor="end" x="460" y="585">SECURITY PROTOCOLS [BYPASSED]</text>
+      <text font-family="SFMono-Regular, Consolas, monospace" font-size="10" fill="#4b5563" text-anchor="end" x="460" y="600">NEURAL LINK ESTABLISHED</text>
+    </g>
+  </g>
+
+  <!-- Right Door -->
+  <g class="door-r">
+    <rect x="474" y="0" width="476" height="1020" fill="#050810" />
+    <!-- Scanlines -->
+    <line x1="474" y1="180" x2="950" y2="180" stroke="#22c55e" stroke-width="0.5" opacity="0.15" />
+    <line x1="474" y1="360" x2="950" y2="360" stroke="#22c55e" stroke-width="0.5" opacity="0.15" />
+    <line x1="474" y1="510" x2="950" y2="510" stroke="#22c55e" stroke-width="0.8" opacity="0.25" />
+    <line x1="474" y1="660" x2="950" y2="660" stroke="#22c55e" stroke-width="0.5" opacity="0.15" />
+    <line x1="474" y1="840" x2="950" y2="840" stroke="#22c55e" stroke-width="0.5" opacity="0.15" />
+    <!-- Seam glow -->
+    <line x1="475" y1="0" x2="475" y2="1020" stroke="#22c55e" stroke-width="2" filter="url(#green-glow)" />
+
+    <g class="door-fade">
+      <text class="hack-pulse" font-size="16" text-anchor="start" x="490" y="540" letter-spacing="3">ACCESS GRANTED &gt;&gt;</text>
+      <text font-family="SFMono-Regular, Consolas, monospace" font-size="12" fill="#22c55e" text-anchor="start" x="490" y="565" opacity="0.8">INITIALIZING AI CORE...</text>
+      <text font-family="SFMono-Regular, Consolas, monospace" font-size="10" fill="#4b5563" text-anchor="start" x="490" y="585">IDENTITY MATRIX LOADED</text>
+      <text font-family="SFMono-Regular, Consolas, monospace" font-size="10" fill="#4b5563" text-anchor="start" x="490" y="600">PORTRAIT MODULE ONLINE</text>
+    </g>
+  </g>
+
+</svg>
