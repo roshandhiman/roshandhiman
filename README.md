@@ -2,7 +2,7 @@
   
   <!-- Vertical Full-Body Profile Card with Door Opening Animation -->
   <a href="https://github.com/roshandhiman">
-    <img src="card.svg?v=2" width="950" alt="Roshan Dhiman Profile Card" />
+    <img src="card.svg" width="950" alt="Roshan Dhiman Profile Card" />
   </a>
   
   <br><br>
