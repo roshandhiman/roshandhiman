@@ -1,13 +1,13 @@
 <div align="center">
   
-  <!-- Main Animated Profile Card (Door Opening Loader & Rotating Rings) -->
+  <!-- Vertical Full-Body Profile Card with Door Opening Animation -->
   <a href="https://github.com/roshandhiman">
     <img src="card.svg" width="950" alt="Roshan Dhiman Profile Card" />
   </a>
   
-  <br>
+  <br><br>
 
-  <!-- Side-by-Side: Animated LeetCode Stats & GitHub Stats -->
+  <!-- LeetCode Metrics Card & GitHub Stats Card -->
   <p align="center">
     <img src="leetcode.svg" width="460" alt="LeetCode Metrics Card" />
     &nbsp;&nbsp;
