@@ -124,56 +124,910 @@
     .door-text {
       animation: fadeDoorText 2.2s ease forwards;
     }
+  
+    @keyframes matrixFall1 {
+      0% { transform: translateY(-785px); }
+      100% { transform: translateY(1205px); }
+    }
+    @keyframes matrixFall2 {
+      0% { transform: translateY(-820px); }
+      100% { transform: translateY(1230px); }
+    }
+    @keyframes matrixFall3 {
+      0% { transform: translateY(-855px); }
+      100% { transform: translateY(1255px); }
+    }
+    @keyframes matrixFall4 {
+      0% { transform: translateY(-890px); }
+      100% { transform: translateY(1280px); }
+    }
+    @keyframes matrixFall5 {
+      0% { transform: translateY(-925px); }
+      100% { transform: translateY(1305px); }
+    }
+    @keyframes matrixFall6 {
+      0% { transform: translateY(-960px); }
+      100% { transform: translateY(1330px); }
+    }
+    @keyframes matrixFall7 {
+      0% { transform: translateY(-995px); }
+      100% { transform: translateY(1355px); }
+    }
+    @keyframes matrixFall8 {
+      0% { transform: translateY(-1030px); }
+      100% { transform: translateY(1380px); }
+    }
+    @keyframes matrixFall9 {
+      0% { transform: translateY(-1065px); }
+      100% { transform: translateY(1405px); }
+    }
+    @keyframes matrixFall10 {
+      0% { transform: translateY(-1100px); }
+      100% { transform: translateY(1430px); }
+    }
+    .m-col {
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .m-head { fill: #ffffff; font-weight: 800; filter: drop-shadow(0 0 6px #00ff66); }
+    .m-lead { fill: #00ff66; font-weight: 700; filter: drop-shadow(0 0 3px #00ff66); }
+    .m-bright { fill: #22c55e; fill-opacity: 0.95; }
+    .m-mid { fill: #16a34a; fill-opacity: 0.70; }
+    .m-dim { fill: #15803d; fill-opacity: 0.45; }
+    .m-tail { fill: #0f5123; fill-opacity: 0.20; }
+
+    .mc-1 { animation: matrixFall1 4.2s linear infinite; animation-delay: 0.0s; }
+    .mc-2 { animation: matrixFall2 4.9s linear infinite; animation-delay: 4.5s; }
+    .mc-3 { animation: matrixFall3 5.6s linear infinite; animation-delay: 4.9s; }
+    .mc-4 { animation: matrixFall4 6.3s linear infinite; animation-delay: 5.2s; }
+    .mc-5 { animation: matrixFall5 7.0s linear infinite; animation-delay: 5.5s; }
+    .mc-6 { animation: matrixFall6 7.7s linear infinite; animation-delay: 5.8s; }
+    .mc-7 { animation: matrixFall7 4.2s linear infinite; animation-delay: 2.0s; }
+    .mc-8 { animation: matrixFall8 4.9s linear infinite; animation-delay: 2.3s; }
+    .mc-9 { animation: matrixFall9 5.6s linear infinite; animation-delay: 2.6s; }
+    .mc-10 { animation: matrixFall10 6.3s linear infinite; animation-delay: 3.0s; }
+    .mc-11 { animation: matrixFall1 7.0s linear infinite; animation-delay: 3.3s; }
+    .mc-12 { animation: matrixFall2 7.7s linear infinite; animation-delay: 3.6s; }
+    .mc-13 { animation: matrixFall3 4.2s linear infinite; animation-delay: 4.0s; }
+    .mc-14 { animation: matrixFall4 4.9s linear infinite; animation-delay: 0.1s; }
+    .mc-15 { animation: matrixFall5 5.6s linear infinite; animation-delay: 0.4s; }
+    .mc-16 { animation: matrixFall6 6.3s linear infinite; animation-delay: 0.8s; }
+    .mc-17 { animation: matrixFall7 7.0s linear infinite; animation-delay: 1.1s; }
+    .mc-18 { animation: matrixFall8 7.7s linear infinite; animation-delay: 1.4s; }
+    .mc-19 { animation: matrixFall9 4.2s linear infinite; animation-delay: 1.7s; }
+    .mc-20 { animation: matrixFall10 4.9s linear infinite; animation-delay: 2.8s; }
+    .mc-21 { animation: matrixFall1 5.6s linear infinite; animation-delay: 3.8s; }
+    .mc-22 { animation: matrixFall2 6.3s linear infinite; animation-delay: 4.8s; }
+    .mc-23 { animation: matrixFall3 7.0s linear infinite; animation-delay: 5.9s; }
+    .mc-24 { animation: matrixFall4 7.7s linear infinite; animation-delay: 6.9s; }
+    .mc-25 { animation: matrixFall5 4.2s linear infinite; animation-delay: 3.7s; }
+    .mc-26 { animation: matrixFall6 4.9s linear infinite; animation-delay: 0.6s; }
+    .mc-27 { animation: matrixFall7 5.6s linear infinite; animation-delay: 1.6s; }
+    .mc-28 { animation: matrixFall8 6.3s linear infinite; animation-delay: 2.6s; }
+    .mc-29 { animation: matrixFall9 7.0s linear infinite; animation-delay: 3.6s; }
+    .mc-30 { animation: matrixFall10 7.7s linear infinite; animation-delay: 4.7s; }
+    .mc-31 { animation: matrixFall1 4.2s linear infinite; animation-delay: 1.5s; }
+    .mc-32 { animation: matrixFall2 4.9s linear infinite; animation-delay: 3.2s; }
   </style>
 
   <!-- Background Canvas -->
   <rect width="950" height="1050" rx="16" fill="url(#card-bg)" stroke="#21262d" stroke-width="1.5" />
 
-  <!-- ==================== MATRIX CODE RAIN BACKGROUND ==================== -->
-  <g class="matrix-code" filter="url(#matrix-blur)">
-    <!-- Column 1 -->
-    <text x="60" y="160">01001001 01001110</text>
-    <text x="60" y="190">#include &lt;iostream&gt;</text>
-    <text x="60" y="220">void* ptr = malloc();</text>
-    <text x="60" y="250">SELECT * FROM users;</text>
-    <text x="60" y="280">0x7FFE4A9B01C2</text>
-    <text x="60" y="310">int main() { return 0; }</text>
-    <text x="60" y="340">std::vector&lt;int&gt; v;</text>
-    <text x="60" y="370">while(core_active)</text>
-    <text x="60" y="400">01101110 01100101</text>
-    <text x="60" y="430">CUDA_KERNEL_INIT</text>
-
-    <!-- Column 2 (Comm Box area) -->
-    <text x="60" y="600">git commit -m "init"</text>
-    <text x="60" y="630">docker run -d -p 8080</text>
-    <text x="60" y="660">01110011 01110001 01101100</text>
-    <text x="60" y="690">CONNECT_SOCKET_OK</text>
-    <text x="60" y="720">sudo systemctl start</text>
-    <text x="60" y="750">0x0000FF12 0xDEADBEEF</text>
-    <text x="60" y="780">python3 main.py --eval</text>
-    <text x="60" y="810">g++ -O3 -std=c++20</text>
-
-    <!-- Column 3 (Tech Stack area) -->
-    <text x="680" y="160">class GraphNode {};</text>
-    <text x="680" y="190">01110010 01100101</text>
-    <text x="680" y="220">npm run build --prod</text>
-    <text x="680" y="250">db.collection.find()</text>
-    <text x="680" y="280">import torch, cv2</text>
-    <text x="680" y="310">0x89AB CDEF 0123</text>
-    <text x="680" y="340">const [state, setState]</text>
-    <text x="680" y="370">DFS_SEARCH_OPTIMAL</text>
-    <text x="680" y="400">01010011 01010001</text>
-    <text x="680" y="430">thread_pool.submit()</text>
-
-    <!-- Column 4 (Focus area) -->
-    <text x="680" y="600">FAANG_INTERVIEW_PREP</text>
-    <text x="680" y="630">01000100 01010011 01000001</text>
-    <text x="680" y="660">binary_search_tree</text>
-    <text x="680" y="690">dynamic_programming</text>
-    <text x="680" y="720">0x3F3F3F3F INF</text>
-    <text x="680" y="750">matrix_multiplication</text>
-    <text x="680" y="780">dijkstra_shortest_path</text>
-    <text x="680" y="810">01100011 01110000 01110000</text>
+  <!-- ==================== LIVE ANIMATED MATRIX CODE RAIN BACKGROUND ==================== -->
+  <g class="matrix-rain-container">
+    <g class="m-col mc-1" transform="translate(15, 0)">
+      <text x="0" y="0" class="m-tail">1</text>
+      <text x="0" y="21" class="m-tail">}</text>
+      <text x="0" y="42" class="m-tail">void*</text>
+      <text x="0" y="63" class="m-dim">ptr</text>
+      <text x="0" y="84" class="m-dim">DSA</text>
+      <text x="0" y="105" class="m-dim">0x7F</text>
+      <text x="0" y="126" class="m-dim">}</text>
+      <text x="0" y="147" class="m-dim">0110</text>
+      <text x="0" y="168" class="m-dim">X</text>
+      <text x="0" y="189" class="m-dim">}</text>
+      <text x="0" y="210" class="m-mid">!</text>
+      <text x="0" y="231" class="m-mid">Ω</text>
+      <text x="0" y="252" class="m-mid">11010</text>
+      <text x="0" y="273" class="m-mid">⚡</text>
+      <text x="0" y="294" class="m-mid">React</text>
+      <text x="0" y="315" class="m-mid">1</text>
+      <text x="0" y="336" class="m-bright">1</text>
+      <text x="0" y="357" class="m-bright">11010</text>
+      <text x="0" y="378" class="m-bright">C++</text>
+      <text x="0" y="399" class="m-lead">DSA</text>
+      <text x="0" y="420" class="m-head">λ</text>
+    </g>
+    <g class="m-col mc-2" transform="translate(45, 0)">
+      <text x="0" y="0" class="m-tail">π</text>
+      <text x="0" y="21" class="m-tail">0xEF</text>
+      <text x="0" y="42" class="m-dim">Z</text>
+      <text x="0" y="63" class="m-dim">√</text>
+      <text x="0" y="84" class="m-dim">Y</text>
+      <text x="0" y="105" class="m-dim">Ω</text>
+      <text x="0" y="126" class="m-dim">AI/ML</text>
+      <text x="0" y="147" class="m-dim">DSA</text>
+      <text x="0" y="168" class="m-dim">Node</text>
+      <text x="0" y="189" class="m-mid">⚡</text>
+      <text x="0" y="210" class="m-mid">void*</text>
+      <text x="0" y="231" class="m-mid">=</text>
+      <text x="0" y="252" class="m-mid">&amp;</text>
+      <text x="0" y="273" class="m-mid">0</text>
+      <text x="0" y="294" class="m-mid">&lt;</text>
+      <text x="0" y="315" class="m-bright">=</text>
+      <text x="0" y="336" class="m-bright">0xAD</text>
+      <text x="0" y="357" class="m-bright">Y</text>
+      <text x="0" y="378" class="m-lead">React</text>
+      <text x="0" y="399" class="m-head">std::v</text>
+    </g>
+    <g class="m-col mc-3" transform="translate(75, 0)">
+      <text x="0" y="0" class="m-tail">0xDE</text>
+      <text x="0" y="21" class="m-tail">C++</text>
+      <text x="0" y="42" class="m-tail">@</text>
+      <text x="0" y="63" class="m-tail">&lt;</text>
+      <text x="0" y="84" class="m-tail">std::v</text>
+      <text x="0" y="105" class="m-tail">0110</text>
+      <text x="0" y="126" class="m-dim">11010</text>
+      <text x="0" y="147" class="m-dim">g++</text>
+      <text x="0" y="168" class="m-dim">0110</text>
+      <text x="0" y="189" class="m-dim">git</text>
+      <text x="0" y="210" class="m-dim">*</text>
+      <text x="0" y="231" class="m-dim">git</text>
+      <text x="0" y="252" class="m-dim">≈</text>
+      <text x="0" y="273" class="m-mid">NULL</text>
+      <text x="0" y="294" class="m-mid">=</text>
+      <text x="0" y="315" class="m-mid">1</text>
+      <text x="0" y="336" class="m-mid">{</text>
+      <text x="0" y="357" class="m-mid">SQL</text>
+      <text x="0" y="378" class="m-mid">Ω</text>
+      <text x="0" y="399" class="m-bright">1001</text>
+      <text x="0" y="420" class="m-bright">$</text>
+      <text x="0" y="441" class="m-bright">g++</text>
+      <text x="0" y="462" class="m-lead">11010</text>
+      <text x="0" y="483" class="m-head">π</text>
+    </g>
+    <g class="m-col mc-4" transform="translate(105, 0)">
+      <text x="0" y="0" class="m-tail">-</text>
+      <text x="0" y="21" class="m-tail">≡</text>
+      <text x="0" y="42" class="m-tail">≠</text>
+      <text x="0" y="63" class="m-tail">|</text>
+      <text x="0" y="84" class="m-tail">&amp;</text>
+      <text x="0" y="105" class="m-tail">docker</text>
+      <text x="0" y="126" class="m-dim">∆</text>
+      <text x="0" y="147" class="m-dim">0xEF</text>
+      <text x="0" y="168" class="m-dim">Z</text>
+      <text x="0" y="189" class="m-dim">01001</text>
+      <text x="0" y="210" class="m-dim">1</text>
+      <text x="0" y="231" class="m-dim">∫</text>
+      <text x="0" y="252" class="m-dim">DSA</text>
+      <text x="0" y="273" class="m-mid">&gt;</text>
+      <text x="0" y="294" class="m-mid">CUDA</text>
+      <text x="0" y="315" class="m-mid">11010</text>
+      <text x="0" y="336" class="m-mid">*</text>
+      <text x="0" y="357" class="m-mid">DSA</text>
+      <text x="0" y="378" class="m-mid">&amp;</text>
+      <text x="0" y="399" class="m-bright">0110</text>
+      <text x="0" y="420" class="m-bright">g++</text>
+      <text x="0" y="441" class="m-bright">void*</text>
+      <text x="0" y="462" class="m-lead">SQL</text>
+      <text x="0" y="483" class="m-head">≡</text>
+    </g>
+    <g class="m-col mc-5" transform="translate(135, 0)">
+      <text x="0" y="0" class="m-tail">0xAD</text>
+      <text x="0" y="21" class="m-tail">docker</text>
+      <text x="0" y="42" class="m-tail">git</text>
+      <text x="0" y="63" class="m-tail">C++</text>
+      <text x="0" y="84" class="m-tail">∫</text>
+      <text x="0" y="105" class="m-tail">void*</text>
+      <text x="0" y="126" class="m-tail">Y</text>
+      <text x="0" y="147" class="m-dim">$</text>
+      <text x="0" y="168" class="m-dim">X</text>
+      <text x="0" y="189" class="m-dim">√</text>
+      <text x="0" y="210" class="m-dim">01001</text>
+      <text x="0" y="231" class="m-dim">≈</text>
+      <text x="0" y="252" class="m-dim">≡</text>
+      <text x="0" y="273" class="m-dim">0xAD</text>
+      <text x="0" y="294" class="m-mid">Ω</text>
+      <text x="0" y="315" class="m-mid">{</text>
+      <text x="0" y="336" class="m-mid">ptr</text>
+      <text x="0" y="357" class="m-mid">0xAD</text>
+      <text x="0" y="378" class="m-mid">SQL</text>
+      <text x="0" y="399" class="m-mid">g++</text>
+      <text x="0" y="420" class="m-bright">void*</text>
+      <text x="0" y="441" class="m-bright">$</text>
+      <text x="0" y="462" class="m-bright">≡</text>
+      <text x="0" y="483" class="m-lead">Y</text>
+      <text x="0" y="504" class="m-head">π</text>
+    </g>
+    <g class="m-col mc-6" transform="translate(165, 0)">
+      <text x="0" y="0" class="m-tail">X</text>
+      <text x="0" y="21" class="m-tail">main()</text>
+      <text x="0" y="42" class="m-tail">-</text>
+      <text x="0" y="63" class="m-tail">&gt;</text>
+      <text x="0" y="84" class="m-tail">&gt;</text>
+      <text x="0" y="105" class="m-dim">0</text>
+      <text x="0" y="126" class="m-dim">DSA</text>
+      <text x="0" y="147" class="m-dim">+</text>
+      <text x="0" y="168" class="m-dim">1</text>
+      <text x="0" y="189" class="m-dim">=</text>
+      <text x="0" y="210" class="m-dim">main()</text>
+      <text x="0" y="231" class="m-dim">zsh</text>
+      <text x="0" y="252" class="m-mid">void*</text>
+      <text x="0" y="273" class="m-mid">01001</text>
+      <text x="0" y="294" class="m-mid">C++</text>
+      <text x="0" y="315" class="m-mid">#</text>
+      <text x="0" y="336" class="m-mid">%</text>
+      <text x="0" y="357" class="m-mid">∆</text>
+      <text x="0" y="378" class="m-bright">|</text>
+      <text x="0" y="399" class="m-bright">Z</text>
+      <text x="0" y="420" class="m-bright">main()</text>
+      <text x="0" y="441" class="m-lead">C++</text>
+      <text x="0" y="462" class="m-head">√</text>
+    </g>
+    <g class="m-col mc-7" transform="translate(195, 0)">
+      <text x="0" y="0" class="m-tail">zsh</text>
+      <text x="0" y="21" class="m-tail">|</text>
+      <text x="0" y="42" class="m-tail">#</text>
+      <text x="0" y="63" class="m-tail">√</text>
+      <text x="0" y="84" class="m-tail">SQL</text>
+      <text x="0" y="105" class="m-tail">0xDE</text>
+      <text x="0" y="126" class="m-tail">NULL</text>
+      <text x="0" y="147" class="m-tail">0x7F</text>
+      <text x="0" y="168" class="m-tail">ptr</text>
+      <text x="0" y="189" class="m-dim">}</text>
+      <text x="0" y="210" class="m-dim">π</text>
+      <text x="0" y="231" class="m-dim">Ω</text>
+      <text x="0" y="252" class="m-dim">NULL</text>
+      <text x="0" y="273" class="m-dim">}</text>
+      <text x="0" y="294" class="m-dim">⚡</text>
+      <text x="0" y="315" class="m-dim">React</text>
+      <text x="0" y="336" class="m-mid">!</text>
+      <text x="0" y="357" class="m-mid">⚡</text>
+      <text x="0" y="378" class="m-mid">zsh</text>
+      <text x="0" y="399" class="m-mid">docker</text>
+      <text x="0" y="420" class="m-mid">DSA</text>
+      <text x="0" y="441" class="m-mid">0x7F</text>
+      <text x="0" y="462" class="m-bright">λ</text>
+      <text x="0" y="483" class="m-bright">O(N)</text>
+      <text x="0" y="504" class="m-bright">11010</text>
+      <text x="0" y="525" class="m-lead">&lt;</text>
+      <text x="0" y="546" class="m-head">0</text>
+    </g>
+    <g class="m-col mc-8" transform="translate(225, 0)">
+      <text x="0" y="0" class="m-tail">0xDE</text>
+      <text x="0" y="21" class="m-tail">≡</text>
+      <text x="0" y="42" class="m-tail">0xAD</text>
+      <text x="0" y="63" class="m-dim">/</text>
+      <text x="0" y="84" class="m-dim">X</text>
+      <text x="0" y="105" class="m-dim">React</text>
+      <text x="0" y="126" class="m-dim">≈</text>
+      <text x="0" y="147" class="m-dim">01001</text>
+      <text x="0" y="168" class="m-dim">g++</text>
+      <text x="0" y="189" class="m-dim">g++</text>
+      <text x="0" y="210" class="m-mid">≈</text>
+      <text x="0" y="231" class="m-mid">SQL</text>
+      <text x="0" y="252" class="m-mid">Σ</text>
+      <text x="0" y="273" class="m-mid">NULL</text>
+      <text x="0" y="294" class="m-mid">π</text>
+      <text x="0" y="315" class="m-mid">&amp;</text>
+      <text x="0" y="336" class="m-bright">%</text>
+      <text x="0" y="357" class="m-bright">0</text>
+      <text x="0" y="378" class="m-bright">X</text>
+      <text x="0" y="399" class="m-lead">{</text>
+      <text x="0" y="420" class="m-head">1001</text>
+    </g>
+    <g class="m-col mc-9" transform="translate(255, 0)">
+      <text x="0" y="0" class="m-tail">&lt;</text>
+      <text x="0" y="21" class="m-tail">void*</text>
+      <text x="0" y="42" class="m-tail">&gt;</text>
+      <text x="0" y="63" class="m-tail">√</text>
+      <text x="0" y="84" class="m-tail">std::v</text>
+      <text x="0" y="105" class="m-tail">1001</text>
+      <text x="0" y="126" class="m-tail">CUDA</text>
+      <text x="0" y="147" class="m-tail">React</text>
+      <text x="0" y="168" class="m-tail">0xAD</text>
+      <text x="0" y="189" class="m-tail">SQL</text>
+      <text x="0" y="210" class="m-dim">0</text>
+      <text x="0" y="231" class="m-dim">@</text>
+      <text x="0" y="252" class="m-dim">{</text>
+      <text x="0" y="273" class="m-dim">|</text>
+      <text x="0" y="294" class="m-dim">{</text>
+      <text x="0" y="315" class="m-dim">NULL</text>
+      <text x="0" y="336" class="m-dim">λ</text>
+      <text x="0" y="357" class="m-mid">&lt;</text>
+      <text x="0" y="378" class="m-mid">0xBE</text>
+      <text x="0" y="399" class="m-mid">λ</text>
+      <text x="0" y="420" class="m-mid">#</text>
+      <text x="0" y="441" class="m-mid">0110</text>
+      <text x="0" y="462" class="m-mid">&amp;</text>
+      <text x="0" y="483" class="m-bright">≡</text>
+      <text x="0" y="504" class="m-bright">SELECT</text>
+      <text x="0" y="525" class="m-bright">-</text>
+      <text x="0" y="546" class="m-lead">≡</text>
+      <text x="0" y="567" class="m-head">λ</text>
+    </g>
+    <g class="m-col mc-10" transform="translate(285, 0)">
+      <text x="0" y="0" class="m-tail">0xDE</text>
+      <text x="0" y="21" class="m-tail">docker</text>
+      <text x="0" y="42" class="m-tail">&lt;</text>
+      <text x="0" y="63" class="m-tail">0xAD</text>
+      <text x="0" y="84" class="m-tail">Ω</text>
+      <text x="0" y="105" class="m-dim">@</text>
+      <text x="0" y="126" class="m-dim">&gt;</text>
+      <text x="0" y="147" class="m-dim">$</text>
+      <text x="0" y="168" class="m-dim">Σ</text>
+      <text x="0" y="189" class="m-dim">#</text>
+      <text x="0" y="210" class="m-dim">0</text>
+      <text x="0" y="231" class="m-dim">≈</text>
+      <text x="0" y="252" class="m-mid">main()</text>
+      <text x="0" y="273" class="m-mid">O(N)</text>
+      <text x="0" y="294" class="m-mid">1</text>
+      <text x="0" y="315" class="m-mid">1001</text>
+      <text x="0" y="336" class="m-mid">$</text>
+      <text x="0" y="357" class="m-mid">docker</text>
+      <text x="0" y="378" class="m-bright">|</text>
+      <text x="0" y="399" class="m-bright">-</text>
+      <text x="0" y="420" class="m-bright">=</text>
+      <text x="0" y="441" class="m-lead">SELECT</text>
+      <text x="0" y="462" class="m-head">ptr</text>
+    </g>
+    <g class="m-col mc-11" transform="translate(315, 0)">
+      <text x="0" y="0" class="m-tail">ptr</text>
+      <text x="0" y="21" class="m-tail">|</text>
+      <text x="0" y="42" class="m-dim">∆</text>
+      <text x="0" y="63" class="m-dim">%</text>
+      <text x="0" y="84" class="m-dim">11010</text>
+      <text x="0" y="105" class="m-dim">11010</text>
+      <text x="0" y="126" class="m-dim">{</text>
+      <text x="0" y="147" class="m-dim">O(N)</text>
+      <text x="0" y="168" class="m-dim">+</text>
+      <text x="0" y="189" class="m-mid">01001</text>
+      <text x="0" y="210" class="m-mid">&lt;</text>
+      <text x="0" y="231" class="m-mid">Ω</text>
+      <text x="0" y="252" class="m-mid">&gt;</text>
+      <text x="0" y="273" class="m-mid">0x7F</text>
+      <text x="0" y="294" class="m-mid">0x7F</text>
+      <text x="0" y="315" class="m-bright">∫</text>
+      <text x="0" y="336" class="m-bright">FAANG</text>
+      <text x="0" y="357" class="m-bright">%</text>
+      <text x="0" y="378" class="m-lead">π</text>
+      <text x="0" y="399" class="m-head">0xAD</text>
+    </g>
+    <g class="m-col mc-12" transform="translate(345, 0)">
+      <text x="0" y="0" class="m-tail">Σ</text>
+      <text x="0" y="21" class="m-tail">&amp;</text>
+      <text x="0" y="42" class="m-tail">≈</text>
+      <text x="0" y="63" class="m-tail">React</text>
+      <text x="0" y="84" class="m-tail">@</text>
+      <text x="0" y="105" class="m-tail">C++</text>
+      <text x="0" y="126" class="m-dim">$</text>
+      <text x="0" y="147" class="m-dim">Ω</text>
+      <text x="0" y="168" class="m-dim">&lt;</text>
+      <text x="0" y="189" class="m-dim">{</text>
+      <text x="0" y="210" class="m-dim">Y</text>
+      <text x="0" y="231" class="m-dim">0xEF</text>
+      <text x="0" y="252" class="m-dim">Z</text>
+      <text x="0" y="273" class="m-mid">SELECT</text>
+      <text x="0" y="294" class="m-mid">zsh</text>
+      <text x="0" y="315" class="m-mid">∫</text>
+      <text x="0" y="336" class="m-mid">√</text>
+      <text x="0" y="357" class="m-mid">docker</text>
+      <text x="0" y="378" class="m-mid">Node</text>
+      <text x="0" y="399" class="m-bright">!</text>
+      <text x="0" y="420" class="m-bright">Σ</text>
+      <text x="0" y="441" class="m-bright">Node</text>
+      <text x="0" y="462" class="m-lead">1001</text>
+      <text x="0" y="483" class="m-head">ptr</text>
+    </g>
+    <g class="m-col mc-13" transform="translate(375, 0)">
+      <text x="0" y="0" class="m-tail">01001</text>
+      <text x="0" y="21" class="m-tail">std::v</text>
+      <text x="0" y="42" class="m-tail">1</text>
+      <text x="0" y="63" class="m-tail">⚡</text>
+      <text x="0" y="84" class="m-tail">π</text>
+      <text x="0" y="105" class="m-dim">DSA</text>
+      <text x="0" y="126" class="m-dim">⚡</text>
+      <text x="0" y="147" class="m-dim">DSA</text>
+      <text x="0" y="168" class="m-dim">0</text>
+      <text x="0" y="189" class="m-dim">01001</text>
+      <text x="0" y="210" class="m-dim">Z</text>
+      <text x="0" y="231" class="m-dim">≡</text>
+      <text x="0" y="252" class="m-mid">0</text>
+      <text x="0" y="273" class="m-mid">DSA</text>
+      <text x="0" y="294" class="m-mid">01001</text>
+      <text x="0" y="315" class="m-mid">!</text>
+      <text x="0" y="336" class="m-mid">1</text>
+      <text x="0" y="357" class="m-mid">&amp;</text>
+      <text x="0" y="378" class="m-bright">std::v</text>
+      <text x="0" y="399" class="m-bright">01001</text>
+      <text x="0" y="420" class="m-bright">λ</text>
+      <text x="0" y="441" class="m-lead">ptr</text>
+      <text x="0" y="462" class="m-head">void*</text>
+    </g>
+    <g class="m-col mc-14" transform="translate(405, 0)">
+      <text x="0" y="0" class="m-tail">C++</text>
+      <text x="0" y="21" class="m-tail">Ω</text>
+      <text x="0" y="42" class="m-tail">0x7F</text>
+      <text x="0" y="63" class="m-tail">{</text>
+      <text x="0" y="84" class="m-tail">$</text>
+      <text x="0" y="105" class="m-tail">|</text>
+      <text x="0" y="126" class="m-tail">∆</text>
+      <text x="0" y="147" class="m-tail">∆</text>
+      <text x="0" y="168" class="m-tail">FAANG</text>
+      <text x="0" y="189" class="m-dim">ptr</text>
+      <text x="0" y="210" class="m-dim">/</text>
+      <text x="0" y="231" class="m-dim">FAANG</text>
+      <text x="0" y="252" class="m-dim">=</text>
+      <text x="0" y="273" class="m-dim">AI/ML</text>
+      <text x="0" y="294" class="m-dim">0xEF</text>
+      <text x="0" y="315" class="m-dim">0110</text>
+      <text x="0" y="336" class="m-mid">0110</text>
+      <text x="0" y="357" class="m-mid">∫</text>
+      <text x="0" y="378" class="m-mid">React</text>
+      <text x="0" y="399" class="m-mid">git</text>
+      <text x="0" y="420" class="m-mid">React</text>
+      <text x="0" y="441" class="m-mid">AI/ML</text>
+      <text x="0" y="462" class="m-bright">SQL</text>
+      <text x="0" y="483" class="m-bright">&amp;</text>
+      <text x="0" y="504" class="m-bright">{</text>
+      <text x="0" y="525" class="m-lead">0</text>
+      <text x="0" y="546" class="m-head">X</text>
+    </g>
+    <g class="m-col mc-15" transform="translate(435, 0)">
+      <text x="0" y="0" class="m-tail">0</text>
+      <text x="0" y="21" class="m-tail">zsh</text>
+      <text x="0" y="42" class="m-tail">{</text>
+      <text x="0" y="63" class="m-dim">std::v</text>
+      <text x="0" y="84" class="m-dim">=</text>
+      <text x="0" y="105" class="m-dim">&amp;</text>
+      <text x="0" y="126" class="m-dim">0110</text>
+      <text x="0" y="147" class="m-dim">ptr</text>
+      <text x="0" y="168" class="m-dim">0xEF</text>
+      <text x="0" y="189" class="m-dim">0xEF</text>
+      <text x="0" y="210" class="m-mid">Ω</text>
+      <text x="0" y="231" class="m-mid">Node</text>
+      <text x="0" y="252" class="m-mid">0x7F</text>
+      <text x="0" y="273" class="m-mid">React</text>
+      <text x="0" y="294" class="m-mid">0xBE</text>
+      <text x="0" y="315" class="m-mid">void*</text>
+      <text x="0" y="336" class="m-bright">SQL</text>
+      <text x="0" y="357" class="m-bright">ptr</text>
+      <text x="0" y="378" class="m-bright">&amp;</text>
+      <text x="0" y="399" class="m-lead">$</text>
+      <text x="0" y="420" class="m-head">01001</text>
+    </g>
+    <g class="m-col mc-16" transform="translate(465, 0)">
+      <text x="0" y="0" class="m-tail">=</text>
+      <text x="0" y="21" class="m-tail">&amp;</text>
+      <text x="0" y="42" class="m-tail">*</text>
+      <text x="0" y="63" class="m-tail">π</text>
+      <text x="0" y="84" class="m-tail">0110</text>
+      <text x="0" y="105" class="m-tail">0</text>
+      <text x="0" y="126" class="m-tail">√</text>
+      <text x="0" y="147" class="m-tail">Ω</text>
+      <text x="0" y="168" class="m-tail">-</text>
+      <text x="0" y="189" class="m-dim">0</text>
+      <text x="0" y="210" class="m-dim">11010</text>
+      <text x="0" y="231" class="m-dim">$</text>
+      <text x="0" y="252" class="m-dim">&lt;</text>
+      <text x="0" y="273" class="m-dim">*</text>
+      <text x="0" y="294" class="m-dim">ptr</text>
+      <text x="0" y="315" class="m-dim">0xAD</text>
+      <text x="0" y="336" class="m-mid">AI/ML</text>
+      <text x="0" y="357" class="m-mid">O(N)</text>
+      <text x="0" y="378" class="m-mid">FAANG</text>
+      <text x="0" y="399" class="m-mid">C++</text>
+      <text x="0" y="420" class="m-mid">&amp;</text>
+      <text x="0" y="441" class="m-mid">zsh</text>
+      <text x="0" y="462" class="m-bright">!</text>
+      <text x="0" y="483" class="m-bright">0</text>
+      <text x="0" y="504" class="m-bright">0xAD</text>
+      <text x="0" y="525" class="m-lead">g++</text>
+      <text x="0" y="546" class="m-head">0</text>
+    </g>
+    <g class="m-col mc-17" transform="translate(495, 0)">
+      <text x="0" y="0" class="m-tail">NULL</text>
+      <text x="0" y="21" class="m-tail">$</text>
+      <text x="0" y="42" class="m-tail">/</text>
+      <text x="0" y="63" class="m-tail">/</text>
+      <text x="0" y="84" class="m-tail">SQL</text>
+      <text x="0" y="105" class="m-tail">CUDA</text>
+      <text x="0" y="126" class="m-tail">React</text>
+      <text x="0" y="147" class="m-tail">Y</text>
+      <text x="0" y="168" class="m-dim">@</text>
+      <text x="0" y="189" class="m-dim">{</text>
+      <text x="0" y="210" class="m-dim">/</text>
+      <text x="0" y="231" class="m-dim">π</text>
+      <text x="0" y="252" class="m-dim">∫</text>
+      <text x="0" y="273" class="m-dim">Z</text>
+      <text x="0" y="294" class="m-dim">O(N)</text>
+      <text x="0" y="315" class="m-mid">0xDE</text>
+      <text x="0" y="336" class="m-mid">0xEF</text>
+      <text x="0" y="357" class="m-mid">CUDA</text>
+      <text x="0" y="378" class="m-mid">C++</text>
+      <text x="0" y="399" class="m-mid">@</text>
+      <text x="0" y="420" class="m-mid">0</text>
+      <text x="0" y="441" class="m-bright">⚡</text>
+      <text x="0" y="462" class="m-bright">}</text>
+      <text x="0" y="483" class="m-bright">Ω</text>
+      <text x="0" y="504" class="m-lead">0</text>
+      <text x="0" y="525" class="m-head">}</text>
+    </g>
+    <g class="m-col mc-18" transform="translate(525, 0)">
+      <text x="0" y="0" class="m-tail">0</text>
+      <text x="0" y="21" class="m-tail">0</text>
+      <text x="0" y="42" class="m-tail">⚡</text>
+      <text x="0" y="63" class="m-tail">FAANG</text>
+      <text x="0" y="84" class="m-tail">λ</text>
+      <text x="0" y="105" class="m-tail">#</text>
+      <text x="0" y="126" class="m-tail">*</text>
+      <text x="0" y="147" class="m-dim">Σ</text>
+      <text x="0" y="168" class="m-dim">0xAD</text>
+      <text x="0" y="189" class="m-dim">0</text>
+      <text x="0" y="210" class="m-dim">@</text>
+      <text x="0" y="231" class="m-dim">λ</text>
+      <text x="0" y="252" class="m-dim">11010</text>
+      <text x="0" y="273" class="m-dim">*</text>
+      <text x="0" y="294" class="m-mid">0xBE</text>
+      <text x="0" y="315" class="m-mid">01001</text>
+      <text x="0" y="336" class="m-mid">≈</text>
+      <text x="0" y="357" class="m-mid">01001</text>
+      <text x="0" y="378" class="m-mid">X</text>
+      <text x="0" y="399" class="m-mid">&amp;</text>
+      <text x="0" y="420" class="m-bright">ptr</text>
+      <text x="0" y="441" class="m-bright">zsh</text>
+      <text x="0" y="462" class="m-bright">1001</text>
+      <text x="0" y="483" class="m-lead">%</text>
+      <text x="0" y="504" class="m-head">|</text>
+    </g>
+    <g class="m-col mc-19" transform="translate(555, 0)">
+      <text x="0" y="0" class="m-tail">⚡</text>
+      <text x="0" y="21" class="m-tail">≈</text>
+      <text x="0" y="42" class="m-tail">1</text>
+      <text x="0" y="63" class="m-tail">≠</text>
+      <text x="0" y="84" class="m-tail">11010</text>
+      <text x="0" y="105" class="m-dim">AI/ML</text>
+      <text x="0" y="126" class="m-dim">∫</text>
+      <text x="0" y="147" class="m-dim">⚡</text>
+      <text x="0" y="168" class="m-dim">∆</text>
+      <text x="0" y="189" class="m-dim">Σ</text>
+      <text x="0" y="210" class="m-dim">main()</text>
+      <text x="0" y="231" class="m-dim">$</text>
+      <text x="0" y="252" class="m-mid">NULL</text>
+      <text x="0" y="273" class="m-mid">C++</text>
+      <text x="0" y="294" class="m-mid">∫</text>
+      <text x="0" y="315" class="m-mid">Z</text>
+      <text x="0" y="336" class="m-mid">main()</text>
+      <text x="0" y="357" class="m-mid">ptr</text>
+      <text x="0" y="378" class="m-bright">NULL</text>
+      <text x="0" y="399" class="m-bright">zsh</text>
+      <text x="0" y="420" class="m-bright">0x7F</text>
+      <text x="0" y="441" class="m-lead">∫</text>
+      <text x="0" y="462" class="m-head">√</text>
+    </g>
+    <g class="m-col mc-20" transform="translate(585, 0)">
+      <text x="0" y="0" class="m-tail">SQL</text>
+      <text x="0" y="21" class="m-tail">main()</text>
+      <text x="0" y="42" class="m-tail">$</text>
+      <text x="0" y="63" class="m-tail">&lt;</text>
+      <text x="0" y="84" class="m-tail">$</text>
+      <text x="0" y="105" class="m-tail">01001</text>
+      <text x="0" y="126" class="m-dim">0</text>
+      <text x="0" y="147" class="m-dim">SQL</text>
+      <text x="0" y="168" class="m-dim">≠</text>
+      <text x="0" y="189" class="m-dim">∆</text>
+      <text x="0" y="210" class="m-dim">0110</text>
+      <text x="0" y="231" class="m-dim">01001</text>
+      <text x="0" y="252" class="m-dim">Ω</text>
+      <text x="0" y="273" class="m-mid">C++</text>
+      <text x="0" y="294" class="m-mid">λ</text>
+      <text x="0" y="315" class="m-mid">NULL</text>
+      <text x="0" y="336" class="m-mid">0x7F</text>
+      <text x="0" y="357" class="m-mid">$</text>
+      <text x="0" y="378" class="m-mid">git</text>
+      <text x="0" y="399" class="m-bright">|</text>
+      <text x="0" y="420" class="m-bright">01001</text>
+      <text x="0" y="441" class="m-bright">|</text>
+      <text x="0" y="462" class="m-lead">ptr</text>
+      <text x="0" y="483" class="m-head">docker</text>
+    </g>
+    <g class="m-col mc-21" transform="translate(615, 0)">
+      <text x="0" y="0" class="m-tail">0xAD</text>
+      <text x="0" y="21" class="m-tail">Node</text>
+      <text x="0" y="42" class="m-tail">-</text>
+      <text x="0" y="63" class="m-tail">Ω</text>
+      <text x="0" y="84" class="m-tail">Z</text>
+      <text x="0" y="105" class="m-tail">SELECT</text>
+      <text x="0" y="126" class="m-dim">≠</text>
+      <text x="0" y="147" class="m-dim">=</text>
+      <text x="0" y="168" class="m-dim">√</text>
+      <text x="0" y="189" class="m-dim">Σ</text>
+      <text x="0" y="210" class="m-dim">0</text>
+      <text x="0" y="231" class="m-dim">∫</text>
+      <text x="0" y="252" class="m-dim">+</text>
+      <text x="0" y="273" class="m-mid">π</text>
+      <text x="0" y="294" class="m-mid">SELECT</text>
+      <text x="0" y="315" class="m-mid">$</text>
+      <text x="0" y="336" class="m-mid">∫</text>
+      <text x="0" y="357" class="m-mid">0110</text>
+      <text x="0" y="378" class="m-mid">%</text>
+      <text x="0" y="399" class="m-bright">|</text>
+      <text x="0" y="420" class="m-bright">0x7F</text>
+      <text x="0" y="441" class="m-bright">NULL</text>
+      <text x="0" y="462" class="m-lead">1001</text>
+      <text x="0" y="483" class="m-head">|</text>
+    </g>
+    <g class="m-col mc-22" transform="translate(645, 0)">
+      <text x="0" y="0" class="m-tail">}</text>
+      <text x="0" y="21" class="m-tail">π</text>
+      <text x="0" y="42" class="m-tail">0xDE</text>
+      <text x="0" y="63" class="m-dim">void*</text>
+      <text x="0" y="84" class="m-dim">CUDA</text>
+      <text x="0" y="105" class="m-dim">≈</text>
+      <text x="0" y="126" class="m-dim">C++</text>
+      <text x="0" y="147" class="m-dim">Z</text>
+      <text x="0" y="168" class="m-dim">std::v</text>
+      <text x="0" y="189" class="m-dim">C++</text>
+      <text x="0" y="210" class="m-mid">X</text>
+      <text x="0" y="231" class="m-mid">≡</text>
+      <text x="0" y="252" class="m-mid">*</text>
+      <text x="0" y="273" class="m-mid">NULL</text>
+      <text x="0" y="294" class="m-mid">λ</text>
+      <text x="0" y="315" class="m-mid">O(N)</text>
+      <text x="0" y="336" class="m-bright">NULL</text>
+      <text x="0" y="357" class="m-bright">!</text>
+      <text x="0" y="378" class="m-bright">#</text>
+      <text x="0" y="399" class="m-lead">*</text>
+      <text x="0" y="420" class="m-head">0</text>
+    </g>
+    <g class="m-col mc-23" transform="translate(675, 0)">
+      <text x="0" y="0" class="m-tail">≡</text>
+      <text x="0" y="21" class="m-tail">React</text>
+      <text x="0" y="42" class="m-tail">-</text>
+      <text x="0" y="63" class="m-dim">void*</text>
+      <text x="0" y="84" class="m-dim">1</text>
+      <text x="0" y="105" class="m-dim">0</text>
+      <text x="0" y="126" class="m-dim">std::v</text>
+      <text x="0" y="147" class="m-dim">&gt;</text>
+      <text x="0" y="168" class="m-dim">0x7F</text>
+      <text x="0" y="189" class="m-dim">≡</text>
+      <text x="0" y="210" class="m-mid">NULL</text>
+      <text x="0" y="231" class="m-mid">0xAD</text>
+      <text x="0" y="252" class="m-mid">}</text>
+      <text x="0" y="273" class="m-mid">Node</text>
+      <text x="0" y="294" class="m-mid">π</text>
+      <text x="0" y="315" class="m-mid">Z</text>
+      <text x="0" y="336" class="m-bright">React</text>
+      <text x="0" y="357" class="m-bright">π</text>
+      <text x="0" y="378" class="m-bright">0</text>
+      <text x="0" y="399" class="m-lead">1001</text>
+      <text x="0" y="420" class="m-head">01001</text>
+    </g>
+    <g class="m-col mc-24" transform="translate(705, 0)">
+      <text x="0" y="0" class="m-tail">Ω</text>
+      <text x="0" y="21" class="m-tail">1</text>
+      <text x="0" y="42" class="m-tail">-</text>
+      <text x="0" y="63" class="m-tail">docker</text>
+      <text x="0" y="84" class="m-dim">⚡</text>
+      <text x="0" y="105" class="m-dim">π</text>
+      <text x="0" y="126" class="m-dim">0xDE</text>
+      <text x="0" y="147" class="m-dim">React</text>
+      <text x="0" y="168" class="m-dim">0x7F</text>
+      <text x="0" y="189" class="m-dim">1</text>
+      <text x="0" y="210" class="m-dim">SELECT</text>
+      <text x="0" y="231" class="m-mid">docker</text>
+      <text x="0" y="252" class="m-mid">!</text>
+      <text x="0" y="273" class="m-mid">$</text>
+      <text x="0" y="294" class="m-mid">/</text>
+      <text x="0" y="315" class="m-mid">&amp;</text>
+      <text x="0" y="336" class="m-mid">1</text>
+      <text x="0" y="357" class="m-bright">!</text>
+      <text x="0" y="378" class="m-bright">git</text>
+      <text x="0" y="399" class="m-bright">C++</text>
+      <text x="0" y="420" class="m-lead">X</text>
+      <text x="0" y="441" class="m-head">ptr</text>
+    </g>
+    <g class="m-col mc-25" transform="translate(735, 0)">
+      <text x="0" y="0" class="m-tail">git</text>
+      <text x="0" y="21" class="m-tail">&gt;</text>
+      <text x="0" y="42" class="m-tail">π</text>
+      <text x="0" y="63" class="m-dim">|</text>
+      <text x="0" y="84" class="m-dim">&amp;</text>
+      <text x="0" y="105" class="m-dim">AI/ML</text>
+      <text x="0" y="126" class="m-dim">≠</text>
+      <text x="0" y="147" class="m-dim">}</text>
+      <text x="0" y="168" class="m-dim">0xDE</text>
+      <text x="0" y="189" class="m-dim">$</text>
+      <text x="0" y="210" class="m-mid">$</text>
+      <text x="0" y="231" class="m-mid">ptr</text>
+      <text x="0" y="252" class="m-mid">&amp;</text>
+      <text x="0" y="273" class="m-mid">0xAD</text>
+      <text x="0" y="294" class="m-mid">=</text>
+      <text x="0" y="315" class="m-mid">=</text>
+      <text x="0" y="336" class="m-bright">0xBE</text>
+      <text x="0" y="357" class="m-bright">|</text>
+      <text x="0" y="378" class="m-bright">AI/ML</text>
+      <text x="0" y="399" class="m-lead">1</text>
+      <text x="0" y="420" class="m-head">0xBE</text>
+    </g>
+    <g class="m-col mc-26" transform="translate(765, 0)">
+      <text x="0" y="0" class="m-tail">/</text>
+      <text x="0" y="21" class="m-tail">$</text>
+      <text x="0" y="42" class="m-tail">AI/ML</text>
+      <text x="0" y="63" class="m-tail">=</text>
+      <text x="0" y="84" class="m-tail">∫</text>
+      <text x="0" y="105" class="m-tail">&amp;</text>
+      <text x="0" y="126" class="m-tail">}</text>
+      <text x="0" y="147" class="m-dim">=</text>
+      <text x="0" y="168" class="m-dim">ptr</text>
+      <text x="0" y="189" class="m-dim">void*</text>
+      <text x="0" y="210" class="m-dim">0xAD</text>
+      <text x="0" y="231" class="m-dim">/</text>
+      <text x="0" y="252" class="m-dim">Y</text>
+      <text x="0" y="273" class="m-dim">0110</text>
+      <text x="0" y="294" class="m-mid">g++</text>
+      <text x="0" y="315" class="m-mid">&amp;</text>
+      <text x="0" y="336" class="m-mid">1</text>
+      <text x="0" y="357" class="m-mid">*</text>
+      <text x="0" y="378" class="m-mid">FAANG</text>
+      <text x="0" y="399" class="m-mid">DSA</text>
+      <text x="0" y="420" class="m-bright">0xEF</text>
+      <text x="0" y="441" class="m-bright">+</text>
+      <text x="0" y="462" class="m-bright">#</text>
+      <text x="0" y="483" class="m-lead">SQL</text>
+      <text x="0" y="504" class="m-head">git</text>
+    </g>
+    <g class="m-col mc-27" transform="translate(795, 0)">
+      <text x="0" y="0" class="m-tail">+</text>
+      <text x="0" y="21" class="m-tail">/</text>
+      <text x="0" y="42" class="m-tail">&amp;</text>
+      <text x="0" y="63" class="m-tail">DSA</text>
+      <text x="0" y="84" class="m-tail">DSA</text>
+      <text x="0" y="105" class="m-tail">1</text>
+      <text x="0" y="126" class="m-dim">∫</text>
+      <text x="0" y="147" class="m-dim">0xEF</text>
+      <text x="0" y="168" class="m-dim">zsh</text>
+      <text x="0" y="189" class="m-dim">std::v</text>
+      <text x="0" y="210" class="m-dim">void*</text>
+      <text x="0" y="231" class="m-dim">&amp;</text>
+      <text x="0" y="252" class="m-dim">01001</text>
+      <text x="0" y="273" class="m-mid">@</text>
+      <text x="0" y="294" class="m-mid">&gt;</text>
+      <text x="0" y="315" class="m-mid">void*</text>
+      <text x="0" y="336" class="m-mid">git</text>
+      <text x="0" y="357" class="m-mid">√</text>
+      <text x="0" y="378" class="m-mid">λ</text>
+      <text x="0" y="399" class="m-bright">zsh</text>
+      <text x="0" y="420" class="m-bright">X</text>
+      <text x="0" y="441" class="m-bright">-</text>
+      <text x="0" y="462" class="m-lead">Ω</text>
+      <text x="0" y="483" class="m-head">std::v</text>
+    </g>
+    <g class="m-col mc-28" transform="translate(825, 0)">
+      <text x="0" y="0" class="m-tail">1001</text>
+      <text x="0" y="21" class="m-tail">|</text>
+      <text x="0" y="42" class="m-dim">NULL</text>
+      <text x="0" y="63" class="m-dim">0xBE</text>
+      <text x="0" y="84" class="m-dim">⚡</text>
+      <text x="0" y="105" class="m-dim">@</text>
+      <text x="0" y="126" class="m-dim">NULL</text>
+      <text x="0" y="147" class="m-dim">1</text>
+      <text x="0" y="168" class="m-dim">0110</text>
+      <text x="0" y="189" class="m-mid">≈</text>
+      <text x="0" y="210" class="m-mid">React</text>
+      <text x="0" y="231" class="m-mid">git</text>
+      <text x="0" y="252" class="m-mid">{</text>
+      <text x="0" y="273" class="m-mid">/</text>
+      <text x="0" y="294" class="m-mid">main()</text>
+      <text x="0" y="315" class="m-bright">React</text>
+      <text x="0" y="336" class="m-bright">≈</text>
+      <text x="0" y="357" class="m-bright">λ</text>
+      <text x="0" y="378" class="m-lead">1001</text>
+      <text x="0" y="399" class="m-head">g++</text>
+    </g>
+    <g class="m-col mc-29" transform="translate(855, 0)">
+      <text x="0" y="0" class="m-tail">NULL</text>
+      <text x="0" y="21" class="m-tail">1</text>
+      <text x="0" y="42" class="m-tail">Z</text>
+      <text x="0" y="63" class="m-tail">React</text>
+      <text x="0" y="84" class="m-tail">0</text>
+      <text x="0" y="105" class="m-dim">Σ</text>
+      <text x="0" y="126" class="m-dim">$</text>
+      <text x="0" y="147" class="m-dim">=</text>
+      <text x="0" y="168" class="m-dim">Ω</text>
+      <text x="0" y="189" class="m-dim">X</text>
+      <text x="0" y="210" class="m-dim">{</text>
+      <text x="0" y="231" class="m-dim">%</text>
+      <text x="0" y="252" class="m-mid">}</text>
+      <text x="0" y="273" class="m-mid">}</text>
+      <text x="0" y="294" class="m-mid">∫</text>
+      <text x="0" y="315" class="m-mid">0xEF</text>
+      <text x="0" y="336" class="m-mid">docker</text>
+      <text x="0" y="357" class="m-mid">React</text>
+      <text x="0" y="378" class="m-bright">01001</text>
+      <text x="0" y="399" class="m-bright">%</text>
+      <text x="0" y="420" class="m-bright">∫</text>
+      <text x="0" y="441" class="m-lead">#</text>
+      <text x="0" y="462" class="m-head">std::v</text>
+    </g>
+    <g class="m-col mc-30" transform="translate(885, 0)">
+      <text x="0" y="0" class="m-tail">∫</text>
+      <text x="0" y="21" class="m-tail">*</text>
+      <text x="0" y="42" class="m-tail">1001</text>
+      <text x="0" y="63" class="m-tail">{</text>
+      <text x="0" y="84" class="m-tail">!</text>
+      <text x="0" y="105" class="m-tail">SELECT</text>
+      <text x="0" y="126" class="m-tail">λ</text>
+      <text x="0" y="147" class="m-dim">SELECT</text>
+      <text x="0" y="168" class="m-dim">∫</text>
+      <text x="0" y="189" class="m-dim">AI/ML</text>
+      <text x="0" y="210" class="m-dim">main()</text>
+      <text x="0" y="231" class="m-dim">zsh</text>
+      <text x="0" y="252" class="m-dim">Y</text>
+      <text x="0" y="273" class="m-dim">CUDA</text>
+      <text x="0" y="294" class="m-mid">π</text>
+      <text x="0" y="315" class="m-mid">0x7F</text>
+      <text x="0" y="336" class="m-mid">0xEF</text>
+      <text x="0" y="357" class="m-mid">AI/ML</text>
+      <text x="0" y="378" class="m-mid">∫</text>
+      <text x="0" y="399" class="m-mid">%</text>
+      <text x="0" y="420" class="m-bright">g++</text>
+      <text x="0" y="441" class="m-bright">X</text>
+      <text x="0" y="462" class="m-bright">}</text>
+      <text x="0" y="483" class="m-lead">!</text>
+      <text x="0" y="504" class="m-head">0xBE</text>
+    </g>
+    <g class="m-col mc-31" transform="translate(915, 0)">
+      <text x="0" y="0" class="m-tail">zsh</text>
+      <text x="0" y="21" class="m-tail">π</text>
+      <text x="0" y="42" class="m-tail">-</text>
+      <text x="0" y="63" class="m-tail">0</text>
+      <text x="0" y="84" class="m-tail">SELECT</text>
+      <text x="0" y="105" class="m-tail">CUDA</text>
+      <text x="0" y="126" class="m-dim">C++</text>
+      <text x="0" y="147" class="m-dim">React</text>
+      <text x="0" y="168" class="m-dim">/</text>
+      <text x="0" y="189" class="m-dim">⚡</text>
+      <text x="0" y="210" class="m-dim">≈</text>
+      <text x="0" y="231" class="m-dim">√</text>
+      <text x="0" y="252" class="m-dim">main()</text>
+      <text x="0" y="273" class="m-mid">SQL</text>
+      <text x="0" y="294" class="m-mid">Node</text>
+      <text x="0" y="315" class="m-mid">Node</text>
+      <text x="0" y="336" class="m-mid">X</text>
+      <text x="0" y="357" class="m-mid">C++</text>
+      <text x="0" y="378" class="m-mid">λ</text>
+      <text x="0" y="399" class="m-bright">FAANG</text>
+      <text x="0" y="420" class="m-bright">/</text>
+      <text x="0" y="441" class="m-bright">!</text>
+      <text x="0" y="462" class="m-lead">@</text>
+      <text x="0" y="483" class="m-head">/</text>
+    </g>
+    <g class="m-col mc-32" transform="translate(938, 0)">
+      <text x="0" y="0" class="m-tail">∫</text>
+      <text x="0" y="21" class="m-tail">11010</text>
+      <text x="0" y="42" class="m-tail">CUDA</text>
+      <text x="0" y="63" class="m-tail">λ</text>
+      <text x="0" y="84" class="m-dim">∫</text>
+      <text x="0" y="105" class="m-dim">≡</text>
+      <text x="0" y="126" class="m-dim">≠</text>
+      <text x="0" y="147" class="m-dim">std::v</text>
+      <text x="0" y="168" class="m-dim">11010</text>
+      <text x="0" y="189" class="m-dim">+</text>
+      <text x="0" y="210" class="m-dim">%</text>
+      <text x="0" y="231" class="m-mid">&lt;</text>
+      <text x="0" y="252" class="m-mid">ptr</text>
+      <text x="0" y="273" class="m-mid">X</text>
+      <text x="0" y="294" class="m-mid">SELECT</text>
+      <text x="0" y="315" class="m-mid">DSA</text>
+      <text x="0" y="336" class="m-mid">=</text>
+      <text x="0" y="357" class="m-bright">0xEF</text>
+      <text x="0" y="378" class="m-bright">0xDE</text>
+      <text x="0" y="399" class="m-bright">1</text>
+      <text x="0" y="420" class="m-lead">1</text>
+      <text x="0" y="441" class="m-head">ptr</text>
+    </g>
   </g>
 
   <!-- Main Content (Revealed after door opening) -->
