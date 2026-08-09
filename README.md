@@ -1,13 +1,13 @@
 <div align="center">
 
-  <!-- Main Banner SVG (No photos, clean gradient typography) -->
+  <!-- Main Banner SVG with Embedded Circle Avatar -->
   <a href="https://github.com/roshandhiman">
     <img src="main.svg" width="100%" alt="Roshanpreet Singh Dhiman Header Banner" />
   </a>
 
   <br><br>
 
-  <!-- Interactive Social Action Buttons -->
+  <!-- Single Consolidated Action Buttons -->
   <p align="center">
     <a href="https://www.linkedin.com/in/roshandhiman" target="_blank">
       <img src="linkedin.svg" height="42" alt="LinkedIn Profile" />
@@ -20,6 +20,10 @@
     <a href="https://roshandhiman-portfolio.vercel.app" target="_blank">
       <img src="portfolio.svg" height="42" alt="Portfolio Website" />
     </a>
+    &nbsp;&nbsp;
+    <a href="mailto:roshanpreetsinghdhiman@gmail.com">
+      <img src="email.svg" height="42" alt="Email Contact" />
+    </a>
   </p>
 
 </div>
@@ -27,14 +31,8 @@
 <br>
 
 <div align="center">
-  <table border="0" stroke="none" style="border-collapse: collapse; border: none;">
-    <tr>
-      <td valign="top" align="center" style="border: none;">
-        <!-- Developer Terminal / Specs Card -->
-        <img src="neofetch.svg" width="580" alt="Roshan Dhiman Specifications" />
-      </td>
-    </tr>
-  </table>
+  <!-- Developer Terminal / Specs Card -->
+  <img src="neofetch.svg" width="580" alt="Roshan Dhiman Specifications" />
 </div>
 
 <br><br>
@@ -72,8 +70,8 @@
 
 <br><br>
 
-<!-- Statistics & Problem Solving Cards -->
-<h2 align="center">📊 GitHub Statistics &amp; Coding Metrics</h2>
+<!-- Statistics -->
+<h2 align="center">📊 GitHub Statistics</h2>
 
 <div align="center">
 
@@ -82,45 +80,4 @@
     <img src="https://gitstatcard.vercel.app/api/card/roshandhiman?theme=github-cyber-center" width="460" alt="GitHub GitStat Card" />
   </p>
 
-  <br>
-
-  <!-- GitHub Stats & Top Languages -->
-  <p align="center">
-    <img src="https://github-readme-stats.vercel.app/api?username=roshandhiman&show_icons=true&theme=dark&hide_border=false" width="410" alt="GitHub Stats" />
-    &nbsp;&nbsp;
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=roshandhiman&layout=compact&theme=dark&hide_border=false" width="370" alt="Top Languages" />
-  </p>
-
-  <br>
-
-  <!-- LeetCode Custom Metrics Card -->
-  <p align="center">
-    <img src="leetcode.svg" width="480" alt="LeetCode Metrics Card" />
-  </p>
-
-</div>
-
-<br><br>
-
-<!-- Contact & Connect -->
-<h2 align="center">📬 Connect With Me</h2>
-
-<p align="center">
-  <a href="mailto:roshanpreetsinghdhiman@gmail.com">
-    <img src="https://img.shields.io/badge/Email-roshanpreetsinghdhiman%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-  &nbsp;
-  <a href="https://www.linkedin.com/in/roshandhiman">
-    <img src="https://img.shields.io/badge/LinkedIn-Roshan_Dhiman-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  &nbsp;
-  <a href="https://roshandhiman-portfolio.vercel.app">
-    <img src="https://img.shields.io/badge/Portfolio-roshandhiman.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
-  </a>
-</p>
-
-<br>
-
-<div align="center">
-  <sub font-size="11">Designed with clean vector SVG aesthetics • Clean &amp; Fast</sub>
 </div>
