@@ -57,8 +57,8 @@
   <text x="25" y="467" class="section-title">🎯 Focus &amp; Interests</text>
   <text x="25" y="487" class="dim">----------------------------------------------------</text>
 
-  <text x="25" y="512"><tspan class="label">Current Focus.......</tspan> <tspan class="val">DSA in C++ (FAANG / MS Prep)</tspan></text>
-  <text x="25" y="535"><tspan class="label">Domains.............</tspan> <tspan class="val">Full-Stack, AI/ML, Computer Vision</tspan></text>
+  <text x="25" y="512"><tspan class="label">Current Focus.......</tspan> <tspan class="val">Full-Stack, AI/ML &amp; Cybersecurity</tspan></text>
+  <text x="25" y="535"><tspan class="label">Domains.............</tspan> <tspan class="val">Web Apps, Machine Learning, Security</tspan></text>
   <text x="25" y="558"><tspan class="label">Hobbies.............</tspan> <tspan class="val">Basketball, Boxing, Chess, Fitness</tspan></text>
 
   <!-- Divider -->
