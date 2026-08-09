@@ -1,34 +1,73 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="590" height="868" viewBox="0 0 590 868">
-<rect width="590" height="868" fill="#0d1117" rx="10"/>
-<style>text { font-family: "SFMono-Regular", "Consolas", "Menlo", monospace; font-size: 15px; }</style>
-<text x="20" y="26" fill="#ff3b30" font-weight="bold">roshandhiman@github</text>
-<text x="20" y="50" fill="#5c6773">----------------------</text>
-<text x="20" y="74"><tspan fill="#ff9500">OS:.....................</tspan> <tspan fill="#e6e6e6">macOS, Windows, Linux</tspan></text>
-<text x="20" y="98"><tspan fill="#ff9500">Host:...................</tspan> <tspan fill="#e6e6e6">Chitkara University</tspan></text>
-<text x="20" y="122"><tspan fill="#ff9500">Role:...................</tspan> <tspan fill="#e6e6e6">CSE Student, Sem 3 (2nd Year)</tspan></text>
-<text x="20" y="146"><tspan fill="#ff9500">Location:................</tspan> <tspan fill="#e6e6e6">Khanna, Punjab, India</tspan></text>
-<text x="20" y="170"><tspan fill="#ff9500">Timezone:................</tspan> <tspan fill="#e6e6e6">IST (UTC +5:30)</tspan></text>
-<text x="20" y="194"><tspan fill="#ff9500">Uptime:..................</tspan> <tspan fill="#e6e6e6">~2 years coding</tspan></text>
-<text x="20" y="218"><tspan fill="#ff9500">Shell:...................</tspan> <tspan fill="#e6e6e6">bash / zsh</tspan></text>
-<text x="20" y="242"><tspan fill="#ff9500">Editor:..................</tspan> <tspan fill="#e6e6e6">VS Code</tspan></text>
-<text x="20" y="290" fill="#4fc3f7" font-weight="bold">Languages</text>
-<text x="20" y="314"><tspan fill="#ff9500">Programming:.............</tspan> <tspan fill="#e6e6e6">Python, Java, C, C++</tspan></text>
-<text x="20" y="338"><tspan fill="#ff9500">Web:......................</tspan> <tspan fill="#e6e6e6">JavaScript, TypeScript, HTML, CSS</tspan></text>
-<text x="20" y="362"><tspan fill="#ff9500">Frameworks:...............</tspan> <tspan fill="#e6e6e6">React, Node.js, MongoDB</tspan></text>
-<text x="20" y="386"><tspan fill="#ff9500">Human:....................</tspan> <tspan fill="#e6e6e6">English, Hindi, Punjabi</tspan></text>
-<text x="20" y="434" fill="#4fc3f7" font-weight="bold">Focus</text>
-<text x="20" y="458"><tspan fill="#ff9500">Current:..................</tspan> <tspan fill="#e6e6e6">DSA (C++) — FAANG/MS/Flipkart prep</tspan></text>
-<text x="20" y="482"><tspan fill="#ff9500">Domains:..................</tspan> <tspan fill="#e6e6e6">Full-Stack, AI/ML, Computer Vision</tspan></text>
-<text x="20" y="530" fill="#4fc3f7" font-weight="bold">Hobbies</text>
-<text x="20" y="554"><tspan fill="#ff9500">Sports:...................</tspan> <tspan fill="#e6e6e6">Basketball, Boxing, 8-Ball Pool</tspan></text>
-<text x="20" y="578"><tspan fill="#ff9500">Mind:.....................</tspan> <tspan fill="#e6e6e6">Chess</tspan></text>
-<text x="20" y="602"><tspan fill="#ff9500">Other:....................</tspan> <tspan fill="#e6e6e6">Fitness</tspan></text>
-<text x="20" y="650" fill="#5c6773">----------------------</text>
-<text x="20" y="674" fill="#ff3b30" font-weight="bold">Contact</text>
-<text x="20" y="698" fill="#5c6773">----------------------</text>
-<text x="20" y="722"><tspan fill="#ff9500">Email:....................</tspan> <tspan fill="#e6e6e6">roshanpreetsinghdhiman@gmail.com</tspan></text>
-<text x="20" y="746"><tspan fill="#ff9500">GitHub:...................</tspan> <tspan fill="#e6e6e6">github.com/roshandhiman</tspan></text>
-<text x="20" y="770"><tspan fill="#ff9500">LinkedIn:.................</tspan> <tspan fill="#e6e6e6">linkedin.com/in/roshandhiman</tspan></text>
-<text x="20" y="794"><tspan fill="#ff9500">Instagram:................</tspan> <tspan fill="#e6e6e6">@roshanpreetsingh.3</tspan></text>
-<text x="20" y="818"><tspan fill="#ff9500">LeetCode:.................</tspan> <tspan fill="#e6e6e6">leetcode.com/roshanpreetsingh</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="740" viewBox="0 0 600 740" fill="none">
+  <defs>
+    <linearGradient id="neo-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117" />
+      <stop offset="100%" stop-color="#161b22" />
+    </linearGradient>
+  </defs>
+
+  <!-- Main Terminal Card -->
+  <rect width="600" height="740" rx="14" fill="url(#neo-bg)" stroke="#30363d" stroke-width="1.5"/>
+
+  <!-- Window Header Bar -->
+  <path d="M 0,14 A 14,14 0 0,1 14,0 L 586,0 A 14,14 0 0,1 600,14 L 600,40 L 0,40 Z" fill="#161b22"/>
+  <line x1="0" y1="40" x2="600" y2="40" stroke="#30363d" stroke-width="1"/>
+  
+  <!-- Window Buttons -->
+  <circle cx="24" cy="20" r="5.5" fill="#ff5f56"/>
+  <circle cx="40" cy="20" r="5.5" fill="#ffbd2e"/>
+  <circle cx="56" cy="20" r="5.5" fill="#27c93f"/>
+  <text x="80" y="24" fill="#8b949e" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="12">neofetch --user roshandhiman</text>
+
+  <!-- Body Content -->
+  <style>
+    .prompt { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; font-size: 14px; font-weight: 700; fill: #58a6ff; }
+    .label { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; font-size: 13.5px; font-weight: 600; fill: #ffa657; }
+    .val { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; font-size: 13.5px; fill: #e6edf3; }
+    .dim { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; font-size: 13.5px; fill: #8b949e; }
+    .section-title { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; font-size: 14px; font-weight: 700; fill: #bc8cff; }
+  </style>
+
+  <!-- User Banner Line -->
+  <text x="25" y="72" class="prompt">roshandhiman@github</text>
+  <text x="25" y="90" class="dim">----------------------------------------------------</text>
+
+  <!-- System Info -->
+  <text x="25" y="115"><tspan class="label">OS..................</tspan> <tspan class="val">macOS, Windows, Linux</tspan></text>
+  <text x="25" y="138"><tspan class="label">Host................</tspan> <tspan class="val">Chitkara University</tspan></text>
+  <text x="25" y="161"><tspan class="label">Role................</tspan> <tspan class="val">CSE Student (Sem 3 / 2nd Year)</tspan></text>
+  <text x="25" y="184"><tspan class="label">Location............</tspan> <tspan class="val">Khanna, Punjab, India</tspan></text>
+  <text x="25" y="207"><tspan class="label">Timezone............</tspan> <tspan class="val">IST (UTC +5:30)</tspan></text>
+  <text x="25" y="230"><tspan class="label">Shell...............</tspan> <tspan class="val">zsh / bash</tspan></text>
+  <text x="25" y="253"><tspan class="label">Editor..............</tspan> <tspan class="val">VS Code</tspan></text>
+
+  <!-- Divider -->
+  <text x="25" y="280" class="dim">----------------------------------------------------</text>
+  <text x="25" y="303" class="section-title">⚡ Languages &amp; Stack</text>
+  <text x="25" y="323" class="dim">----------------------------------------------------</text>
+
+  <!-- Skills -->
+  <text x="25" y="348"><tspan class="label">Programming.........</tspan> <tspan class="val">C++, Python, Java, C</tspan></text>
+  <text x="25" y="371"><tspan class="label">Web &amp; Scripts.......</tspan> <tspan class="val">JavaScript, TypeScript, HTML, CSS</tspan></text>
+  <text x="25" y="394"><tspan class="label">Frameworks &amp; DB.....</tspan> <tspan class="val">React, Node.js, Express, MongoDB</tspan></text>
+  <text x="25" y="417"><tspan class="label">Spoken Languages....</tspan> <tspan class="val">English, Hindi, Punjabi</tspan></text>
+
+  <!-- Divider -->
+  <text x="25" y="444" class="dim">----------------------------------------------------</text>
+  <text x="25" y="467" class="section-title">🎯 Focus &amp; Interests</text>
+  <text x="25" y="487" class="dim">----------------------------------------------------</text>
+
+  <text x="25" y="512"><tspan class="label">Current Focus.......</tspan> <tspan class="val">DSA in C++ (FAANG / MS Prep)</tspan></text>
+  <text x="25" y="535"><tspan class="label">Domains.............</tspan> <tspan class="val">Full-Stack, AI/ML, Computer Vision</tspan></text>
+  <text x="25" y="558"><tspan class="label">Hobbies.............</tspan> <tspan class="val">Basketball, Boxing, Chess, Fitness</tspan></text>
+
+  <!-- Divider -->
+  <text x="25" y="585" class="dim">----------------------------------------------------</text>
+  <text x="25" y="608" class="prompt">📬 Contact &amp; Links</text>
+  <text x="25" y="628" class="dim">----------------------------------------------------</text>
+
+  <text x="25" y="653"><tspan class="label">Email...............</tspan> <tspan class="val">roshanpreetsinghdhiman@gmail.com</tspan></text>
+  <text x="25" y="676"><tspan class="label">Portfolio...........</tspan> <tspan class="val">roshandhiman-portfolio.vercel.app</tspan></text>
+  <text x="25" y="699"><tspan class="label">GitHub / LinkedIn...</tspan> <tspan class="val">github &amp; linkedin @roshandhiman</tspan></text>
+
 </svg>

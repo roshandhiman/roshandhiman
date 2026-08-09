@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="250" viewBox="0 0 900 250" fill="none">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117" />
+      <stop offset="50%" stop-color="#161b22" />
+      <stop offset="100%" stop-color="#0d1117" />
+    </linearGradient>
+    
+    <linearGradient id="text-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58a6ff" />
+      <stop offset="50%" stop-color="#bc8cff" />
+      <stop offset="100%" stop-color="#3fb950" />
+    </linearGradient>
+
+    <linearGradient id="border-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#30363d" />
+      <stop offset="50%" stop-color="#58a6ff" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#30363d" />
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="900" height="250" rx="16" fill="url(#bg-gradient)" stroke="url(#border-gradient)" stroke-width="2"/>
+  
+  <!-- Subtle Ambient Glow -->
+  <circle cx="150" cy="50" r="100" fill="#58a6ff" opacity="0.06" filter="url(#glow)"/>
+  <circle cx="750" cy="200" r="120" fill="#bc8cff" opacity="0.06" filter="url(#glow)"/>
+
+  <!-- Window Header Bar / Controls -->
+  <circle cx="30" cy="28" r="6" fill="#ff5f56" />
+  <circle cx="48" cy="28" r="6" fill="#ffbd2e" />
+  <circle cx="66" cy="28" r="6" fill="#27c93f" />
+  <text x="90" y="32" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">roshandhiman ~ profile</text>
+  <line x1="0" y1="48" x2="900" y2="48" stroke="#21262d" stroke-width="1"/>
+
+  <!-- Main Name Title -->
+  <text x="40" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="38" font-weight="800" fill="url(#text-gradient)" letter-spacing="-0.5">
+    Roshanpreet Singh Dhiman
+  </text>
+
+  <!-- Tagline -->
+  <text x="40" y="145" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="500" fill="#c9d1d9">
+    Computer Science Student &amp; Full-Stack / AI Developer
+  </text>
+  
+  <text x="40" y="172" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="14" fill="#8b949e">
+    🚀 Building scalable web apps, mastering DSA in C++, and exploring AI/ML
+  </text>
+
+  <!-- Skill / Focus Badges -->
+  <g transform="translate(40, 195)">
+    <!-- Badge 1 -->
+    <rect x="0" y="0" width="130" height="28" rx="14" fill="#162c46" stroke="#1f6feb" stroke-width="1"/>
+    <text x="65" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#58a6ff" text-anchor="middle">💻 Full-Stack Web</text>
+
+    <!-- Badge 2 -->
+    <rect x="142" y="0" width="125" height="28" rx="14" fill="#2d1d49" stroke="#8957e5" stroke-width="1"/>
+    <text x="204" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#bc8cff" text-anchor="middle">⚡ DSA in C++</text>
+
+    <!-- Badge 3 -->
+    <rect x="279" y="0" width="145" height="28" rx="14" fill="#143224" stroke="#238636" stroke-width="1"/>
+    <text x="351" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#3fb950" text-anchor="middle">🤖 AI &amp; Computer Vision</text>
+
+    <!-- Badge 4 -->
+    <rect x="436" y="0" width="155" height="28" rx="14" fill="#342211" stroke="#d29922" stroke-width="1"/>
+    <text x="513" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#d29922" text-anchor="middle">🎓 Chitkara University</text>
+  </g>
+</svg>
