@@ -1,38 +1,8 @@
-<div align="center">
 
-  <!-- Main Banner SVG with Embedded Circle Avatar -->
-  <a href="https://github.com/roshandhiman">
-    <img src="main.svg" width="100%" alt="Roshanpreet Singh Dhiman Header Banner" />
-  </a>
-
-  <br><br>
-
-  <!-- Single Consolidated Action Buttons -->
-  <p align="center">
-    <a href="https://www.linkedin.com/in/roshandhiman" target="_blank">
-      <img src="linkedin.svg" height="42" alt="LinkedIn Profile" />
-    </a>
-    &nbsp;&nbsp;
-    <a href="https://github.com/roshandhiman" target="_blank">
-      <img src="github.svg" height="42" alt="GitHub Profile" />
-    </a>
-    &nbsp;&nbsp;
-    <a href="https://roshandhiman-portfolio.vercel.app" target="_blank">
-      <img src="portfolio.svg" height="42" alt="Portfolio Website" />
-    </a>
-    &nbsp;&nbsp;
-    <a href="mailto:roshanpreetsinghdhiman@gmail.com">
-      <img src="email.svg" height="42" alt="Email Contact" />
-    </a>
-  </p>
-
-</div>
-
-<br>
 
 <div align="center">
   <!-- Developer Terminal / Specs Card -->
-  <img src="neofetch.svg" width="580" alt="Roshan Dhiman Specifications" />
+  <img src="devcard.svg" width="900" alt="Roshan Dhiman Specifications" />
 </div>
 
 <br><br>
