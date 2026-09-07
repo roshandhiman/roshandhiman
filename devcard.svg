@@ -62,9 +62,6 @@
   <text x="267.6" y="430" class="chip">VS Code</text>
   <rect x="339.3" y="412" width="59.5" height="26" fill="#121212" stroke="#454545" stroke-width="1.2"/>
   <text x="351.3" y="430" class="chip">Linux</text>
-  <line x1="40" y1="456" x2="850" y2="456" stroke="#2E2E2E" stroke-width="1.5"/>
-  <text x="40" y="480" class="label">Hackathons</text>
-  <text x="40" y="502" class="val" font-size="14" fill="#E5E5E5">Jackathon &#183; Thinkroot x Vortex &#183; Salesforce Crosswalk &#183; GRID 8.0</text>
   <line x1="40" y1="522" x2="850" y2="522" stroke="#2E2E2E" stroke-width="1.5"/>
   <rect x="3" y="531" width="884" height="76" fill="#F2F2F2"/>
   <text x="445" y="565" text-anchor="middle" class="mono" font-size="13" fill="#0A0A0A">roshanpreetsinghdhiman@gmail.com  &#183;  roshandhiman-portfolio.vercel.app</text>
