@@ -13,27 +13,36 @@ W, H = 900, 560
 random.seed(7)
 
 # ---------- data ----------
+def _weeks(days):                     # days: [(date, level, count)] -> columns starting Sunday
+    weeks, col = [], []
+    for d in days:
+        if col and datetime.date.fromisoformat(d[0]).isoweekday() % 7 == 0: weeks.append(col); col = []
+        col.append(d)
+    return weeks + ([col] if col else [])
+
 def contributions():
+    # 1) same source github-contributions.vercel.app uses (no token needed)
+    try:
+        r = urllib.request.Request(f"https://github-contributions-api.jogruber.de/v4/{USER}?y=last", headers={"User-Agent":"card"})
+        j = json.load(urllib.request.urlopen(r, timeout=20))
+        days = [(d["date"], d["level"], d["count"]) for d in j["contributions"]]
+        return _weeks(days), sum(d[2] for d in days)
+    except Exception as e: print("api failed:", e)
+    # 2) GitHub GraphQL (Actions GITHUB_TOKEN)
     tok = os.environ.get("GH_TOKEN")
     if tok:
         try:
-            q = {"query": 'query{user(login:"%s"){contributionsCollection{contributionCalendar{weeks{contributionDays{date contributionLevel}}}}}}' % USER}
+            q = {"query": 'query{user(login:"%s"){contributionsCollection{contributionCalendar{weeks{contributionDays{date contributionLevel contributionCount}}}}}}' % USER}
             r = urllib.request.Request("https://api.github.com/graphql", json.dumps(q).encode(),
                                        {"Authorization": "bearer " + tok, "Content-Type": "application/json", "User-Agent": "card"})
-            weeks = json.load(urllib.request.urlopen(r, timeout=20))["data"]["user"]["contributionsCollection"]["contributionCalendar"]["weeks"]
+            ws = json.load(urllib.request.urlopen(r, timeout=20))["data"]["user"]["contributionsCollection"]["contributionCalendar"]["weeks"]
             lv = {"NONE":0,"FIRST_QUARTILE":1,"SECOND_QUARTILE":2,"THIRD_QUARTILE":3,"FOURTH_QUARTILE":4}
-            return [[(d["date"], lv[d["contributionLevel"]]) for d in w["contributionDays"]] for w in weeks]
-        except Exception as e:
-            print("graphql failed:", e)
-    t = datetime.date.today(); start = t - datetime.timedelta(days=t.weekday()+1+52*7)  # a Sunday
-    out = []
-    for w in range(53):
-        col = []
-        for d in range(7):
-            day = start + datetime.timedelta(days=w*7+d)
-            if day <= t: col.append((day.isoformat(), 0))
-        out.append(col)
-    return out
+            days = [(d["date"], lv[d["contributionLevel"]], d["contributionCount"]) for w in ws for d in w["contributionDays"]]
+            return _weeks(days), sum(d[2] for d in days)
+        except Exception as e: print("graphql failed:", e)
+    # 3) empty grid (no data available)
+    t = datetime.date.today(); st = t - datetime.timedelta(days=t.isoweekday()%7 + 52*7)
+    return _weeks([((st+datetime.timedelta(days=i)).isoformat(), 0, 0) for i in range((t-st).days+1)]), None
 
 def photo():
     for f in ("photo.jpg","photo.jpeg","photo.png"):
@@ -65,16 +74,27 @@ def name_anim(x0=44, y=100, fs=40, cw=24, T=7.0):
         g.append(f'<text x="{x}" y="{y}" font-size="{fs}" font-weight="700" class="f" opacity="0">{ch}<animate attributeName="opacity" values="0;1" keyTimes="0;{fa:.4f}" calcMode="discrete" dur="{T}s" repeatCount="indefinite"/></text>')
     return "".join(g)
 
-def graph(weeks, x0=52, y0=240, cell=12, gap=3):
-    out = []; last_m = None
+def graph(weeks, total, x0=84, y0=250, cell=11, gap=3):
+    st = cell+gap; out = []
+    head = f"{total:,} contributions in the last year" if total is not None else "contributions in the last year"
+    out.append(f'<text x="44" y="218" font-size="15" class="f">{head}</text>')
+    # legend (top-right)
+    lx = W-44-5*st-92
+    out.append(f'<text x="{lx}" y="218" font-size="11" class="m">Less</text>')
+    for i in range(5): out.append(f'<rect x="{lx+34+i*st}" y="208" width="{cell}" height="{cell}" rx="2.5" class="l{i}"/>')
+    out.append(f'<text x="{lx+34+5*st+4}" y="218" font-size="11" class="m">More</text>')
+    # weekday labels
+    for r, nm in ((1,"Mon"),(3,"Wed"),(5,"Fri")):
+        out.append(f'<text x="44" y="{y0+r*st+cell-1}" font-size="10" class="m">{nm}</text>')
+    last_m = None
     for wi, col in enumerate(weeks):
-        x = x0 + wi*(cell+gap)
-        m = col[0][0][5:7] if col else None
-        if m and m != last_m and wi < 51:
-            out.append(f'<text x="{x}" y="{y0-10}" font-size="11" class="m">{datetime.date(2000,int(m),1).strftime("%b")}</text>'); last_m = m
-        for (date, lvl) in col:
-            dow = datetime.date.fromisoformat(date).isoweekday() % 7   # Sun=0
-            out.append(f'<rect x="{x}" y="{y0+dow*(cell+gap)}" width="{cell}" height="{cell}" rx="2.5" class="l{lvl}"/>')
+        x = x0 + wi*st
+        m = col[0][0][5:7]
+        if m != last_m and wi < len(weeks)-2:
+            out.append(f'<text x="{x}" y="{y0-8}" font-size="10" class="m">{datetime.date(2000,int(m),1).strftime("%b")}</text>'); last_m = m
+        for (date, lvl, cnt) in col:
+            dow = datetime.date.fromisoformat(date).isoweekday() % 7
+            out.append(f'<rect x="{x}" y="{y0+dow*st}" width="{cell}" height="{cell}" rx="2.5" class="l{lvl}"/>')
     return "".join(out)
 
 def marquee(names, y, direction, sz=38, gap=58):
@@ -92,7 +112,7 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewB
 <text x="44" y="182" font-size="20" class="m">{esc(LINE2)}</text>
 <circle cx="770" cy="120" r="80" class="s" stroke-width="2"/>
 {photo()}
-{graph(contributions())}
+{graph(*contributions())}
 <line x1="44" y1="355" x2="{W-44}" y2="355" class="s" stroke-opacity=".25"/>
 <g clip-path="url(#k)">{marquee(ROW1, 380, -1)}{marquee(ROW2, 454, +1)}</g>
 </svg>'''
